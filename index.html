@@ -1,0 +1,736 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pemex Deer Park | Industrial Corridor Overview</title>
+  <meta name="description" content="Independent informational landing page focused on the Deer Park industrial corridor, refinery logistics, infrastructure, and regional business visibility." />
+  <style>
+    :root {
+      --bg: #07111b;
+      --bg-soft: #0c1a28;
+      --card: rgba(255,255,255,0.06);
+      --card-border: rgba(255,255,255,0.12);
+      --text: #e9f1f7;
+      --muted: #9fb3c7;
+      --accent: #2fc3ff;
+      --accent-2: #00e5a8;
+      --danger: #ff6b6b;
+      --shadow: 0 20px 60px rgba(0,0,0,0.35);
+      --radius: 22px;
+      --max: 1180px;
+    }* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(47,195,255,0.14), transparent 30%),
+    radial-gradient(circle at 80% 10%, rgba(0,229,168,0.10), transparent 25%),
+    linear-gradient(180deg, #06101a 0%, #08131f 42%, #091623 100%);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.15));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow {
+  position: fixed;
+  width: 38rem;
+  height: 38rem;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 0;
+  animation: floatGlow 14s ease-in-out infinite alternate;
+}
+.glow.one { background: var(--accent); top: -8rem; left: -8rem; }
+.glow.two { background: var(--accent-2); right: -10rem; top: 18rem; animation-delay: 1.5s; }
+
+@keyframes floatGlow {
+  from { transform: translate3d(0,0,0) scale(1); }
+  to { transform: translate3d(30px, -20px, 0) scale(1.08); }
+}
+
+.container {
+  width: min(100% - 32px, var(--max));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(12px);
+  background: rgba(5, 10, 18, 0.68);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(47,195,255,0.2), rgba(0,229,168,0.18));
+  border: 1px solid rgba(255,255,255,0.12);
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow);
+}
+
+.brand-mark span {
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-links a, .btn, .button-link {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.nav-links a:hover { color: #fff; }
+
+.hero {
+  padding: 92px 0 72px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 13px;
+  background: rgba(255,255,255,0.04);
+  margin-bottom: 18px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent-2);
+  box-shadow: 0 0 12px rgba(0,229,168,0.7);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 0.96;
+  margin: 0 0 18px;
+  letter-spacing: -0.05em;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 0 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  font-weight: 600;
+}
+
+.btn:hover { transform: translateY(-2px); border-color: rgba(255,255,255,0.2); }
+.btn.primary {
+  background: linear-gradient(135deg, rgba(47,195,255,0.18), rgba(0,229,168,0.14));
+  border-color: rgba(47,195,255,0.35);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.stat {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.45rem;
+  margin-bottom: 6px;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  display: block;
+}
+
+.hero-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(47,195,255,0.1), transparent 35%, rgba(0,229,168,0.08));
+  pointer-events: none;
+}
+
+.screen {
+  position: relative;
+  background: linear-gradient(180deg, #0b1622, #0e1a2b);
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+  min-height: 470px;
+  padding: 18px;
+  overflow: hidden;
+}
+
+.screen-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.screen-top span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.22);
+}
+
+.pipeline-visual {
+  position: relative;
+  height: 380px;
+  border-radius: 18px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+    linear-gradient(135deg, rgba(47,195,255,0.08), rgba(0,229,168,0.05));
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.pipe, .pipe-v, .node, .label-chip {
+  position: absolute;
+}
+
+.pipe {
+  height: 8px;
+  background: linear-gradient(90deg, rgba(47,195,255,0.65), rgba(0,229,168,0.8));
+  border-radius: 999px;
+  box-shadow: 0 0 24px rgba(47,195,255,0.28);
+  animation: pulse 2.8s ease-in-out infinite;
+}
+
+.pipe-v {
+  width: 8px;
+  background: linear-gradient(180deg, rgba(47,195,255,0.65), rgba(0,229,168,0.8));
+  border-radius: 999px;
+  box-shadow: 0 0 24px rgba(47,195,255,0.28);
+  animation: pulse 2.8s ease-in-out infinite;
+}
+
+.node {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #dffcff;
+  box-shadow: 0 0 18px rgba(47,195,255,0.7);
+}
+
+.label-chip {
+  padding: 8px 10px;
+  background: rgba(6, 16, 26, 0.92);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.72; }
+  50% { opacity: 1; }
+}
+
+section {
+  padding: 30px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  letter-spacing: -0.04em;
+}
+
+.section-header p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+}
+
+.card p, .card li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pill {
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #d8edf7;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.checklist {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.check {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.check i {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(0,229,168,0.12);
+  border: 1px solid rgba(0,229,168,0.3);
+  color: var(--accent-2);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.step-num {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: linear-gradient(135deg, rgba(47,195,255,0.16), rgba(0,229,168,0.14));
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.notice {
+  margin-top: 26px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255, 107, 107, 0.07);
+  border: 1px solid rgba(255, 107, 107, 0.2);
+  color: #ffd7d7;
+  line-height: 1.7;
+}
+
+.cta {
+  padding: 26px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(47,195,255,0.14), rgba(0,229,168,0.12));
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  align-items: center;
+  margin: 28px 0 52px;
+}
+
+.cta p { color: #d8e7f2; line-height: 1.7; }
+
+.contact-card {
+  background: rgba(5, 10, 18, 0.42);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 22px;
+  padding: 20px;
+}
+
+.contact-card label {
+  font-size: 13px;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #fff;
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  font: inherit;
+  resize: vertical;
+}
+
+.contact-card button {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #04131d;
+  background: linear-gradient(135deg, #2fc3ff, #00e5a8);
+}
+
+footer {
+  padding: 0 0 40px;
+  color: var(--muted);
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 24px;
+}
+
+@media (max-width: 980px) {
+  .hero, .split, .cta { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .hero-stats { grid-template-columns: 1fr; }
+  .section-header { flex-direction: column; align-items: start; }
+}
+
+@media (max-width: 700px) {
+  .nav-inner { flex-direction: column; align-items: start; }
+  h1 { letter-spacing: -0.04em; }
+  .hero { padding-top: 56px; }
+  .screen { min-height: 380px; }
+  .pipeline-visual { height: 290px; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="glow one"></div>
+  <div class="glow two"></div>  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-mark"><span>PDP</span></div>
+        <div>
+          <div>Pemex Deer Park</div>
+          <div style="font-size:12px;color:var(--muted);font-weight:500;">Independent industry landing page</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#value">Domain Value</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>  <main class="container">
+    <section class="hero" id="overview">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Premium industrial microsite concept</div>
+        <h1>Turn a strategic domain into a high-value digital asset.</h1>
+        <p>
+          This concept positions <strong>pemexdeerpark.com</strong> as a polished, independent industry-facing web property centered on the Deer Park industrial corridor, energy infrastructure, logistics visibility, and regional business presence. The goal is to make the domain look commercially useful, credible, and worth acquiring.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#strategy">See the monetization strategy</a>
+          <a class="btn" href="#contact">Add a contact form</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>1</strong>
+            <span>Premium domain-specific brand story that looks intentional and established.</span>
+          </div>
+          <div class="stat">
+            <strong>3</strong>
+            <span>Built-in objectives: credibility, lead capture, and optional domain acquisition interest.</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>Always-on digital frontage for industrial visibility, inbound inquiries, and SEO presence.</span>
+          </div>
+        </div>
+      </div><div class="hero-panel">
+    <div class="screen">
+      <div class="screen-top"><span></span><span></span><span></span></div>
+      <div class="pipeline-visual">
+        <div class="pipe" style="top:54px;left:24px;width:180px"></div>
+        <div class="pipe-v" style="top:54px;left:200px;height:88px"></div>
+        <div class="pipe" style="top:138px;left:200px;width:140px"></div>
+        <div class="pipe-v" style="top:138px;left:334px;height:120px"></div>
+        <div class="pipe" style="top:252px;left:334px;width:150px"></div>
+        <div class="pipe-v" style="top:104px;left:440px;height:150px"></div>
+        <div class="pipe" style="top:100px;left:438px;width:105px"></div>
+
+        <div class="node" style="top:49px;left:20px"></div>
+        <div class="node" style="top:49px;left:194px"></div>
+        <div class="node" style="top:131px;left:328px"></div>
+        <div class="node" style="top:245px;left:476px"></div>
+        <div class="node" style="top:92px;left:535px"></div>
+
+        <div class="label-chip" style="top:16px;left:22px">Refining footprint</div>
+        <div class="label-chip" style="top:146px;left:36px">Terminal access</div>
+        <div class="label-chip" style="top:70px;right:20px">Energy corridor visibility</div>
+        <div class="label-chip" style="bottom:18px;left:26px">Industrial search intent</div>
+        <div class="label-chip" style="bottom:24px;right:24px">Domain positioning</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="value">
+  <div class="section-header">
+    <div>
+      <h2>What this site is designed to do</h2>
+    </div>
+    <p>
+      A good domain sales strategy is not just owning the name. It is proving the name can support search traffic, brand relevance, investor-style presentation, and regional industrial authority.
+    </p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>1. Look established</h3>
+      <p>
+        Instead of a parked page, this design makes the domain look like a serious niche property with a clear thesis, a specific audience, and a strong visual identity.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Premium presentation</span>
+        <span class="pill">Corporate aesthetic</span>
+        <span class="pill">Fast mobile layout</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>2. Create perceived utility</h3>
+      <p>
+        The page frames the domain as useful for industrial information, local visibility, infrastructure communications, or branded regional outreach rather than just a resale listing.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Utility-first framing</span>
+        <span class="pill">Lead capture</span>
+        <span class="pill">Strategic asset</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>3. Support monetization</h3>
+      <p>
+        You can use the same page to attract acquisition interest, rank for related searches, sell ad spots, collect sponsors, or capture industrial service leads.
+      </p>
+      <div class="pill-row">
+        <span class="pill">SEO potential</span>
+        <span class="pill">Sponsorship options</span>
+        <span class="pill">Acquisition leverage</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="strategy">
+  <div class="section-header">
+    <div>
+      <h2>All 3, built into one plan</h2>
+    </div>
+    <p>
+      You asked for all three: a flashy homepage, a full upload-ready site direction, and a more premium professional presence. This layout merges those into a single landing-page package you can use immediately.
+    </p>
+  </div>
+  <div class="split">
+    <div class="card">
+      <h3>Flashy homepage</h3>
+      <p>
+        The hero section uses lighting effects, glassmorphism cards, animated pipeline visuals, modern spacing, and a premium dark industrial palette so the site feels more like a funded brand than a generic parked domain.
+      </p>
+      <div class="checklist">
+        <div class="check"><i>✓</i><div><strong>Visual motion</strong><br><span style="color:var(--muted)">Animated glow and infrastructure motif without needing external libraries.</span></div></div>
+        <div class="check"><i>✓</i><div><strong>High-end layout</strong><br><span style="color:var(--muted)">Strong headline hierarchy, card system, and conversion-focused CTA blocks.</span></div></div>
+        <div class="check"><i>✓</i><div><strong>Netlify-ready</strong><br><span style="color:var(--muted)">Single-file HTML you can publish fast and later expand.</span></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Whole website folder plan</h3>
+      <div class="timeline">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <strong>Start with this landing page</strong>
+            <p>Upload this as <code>index.html</code> to launch quickly and establish the domain visually.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <strong>Add supporting pages</strong>
+            <p>Create <code>about.html</code>, <code>corridor.html</code>, <code>news.html</code>, and <code>contact.html</code> to make the site feel larger and more useful.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <strong>Layer in monetization</strong>
+            <p>Offer sponsor blocks, featured service listings, newsletter signups, inquiry capture, or acquisition messaging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice">
+    <strong>Important:</strong> keep the site framed as an <em>independent</em> informational or industry-related property. Do not present it as the official website of Pemex, Deer Park Refinery, or any affiliated corporate entity unless you are authorized to do that. That protects you from trademark and impersonation problems while still making the domain look valuable.
+  </div>
+</section>
+
+<section>
+  <div class="section-header">
+    <div>
+      <h2>Monetization angles</h2>
+    </div>
+    <p>
+      This domain can be positioned for more than resale. The strongest move is to make it capable of producing inbound business value on its own.
+    </p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Sponsored placement</h3>
+      <p>
+        Sell visibility to local industrial contractors, inspection companies, logistics operators, environmental consultants, staffing firms, or equipment suppliers.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Lead generation</h3>
+      <p>
+        Convert the contact form into a referral funnel for industrial services in the Deer 
