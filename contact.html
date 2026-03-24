@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Pemex Deer Park</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1320;
+      color: white;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 46px;
+      margin-bottom: 16px;
+    }
+    p {
+      color: #c7d2e0;
+      font-size: 18px;
+    }
+    a {
+      color: #2fc3ff;
+      text-decoration: none;
+    }
+    .toplink {
+      display: inline-block;
+      margin-bottom: 30px;
+      padding: 10px 16px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+    }
+    .card {
+      background: rgba(255,255,255,0.06);
+      padding: 26px;
+      border-radius: 18px;
+      margin-top: 24px;
+    }
+    label {
+      display: block;
+      margin: 14px 0 8px;
+      color: #c7d2e0;
+      font-size: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.05);
+      color: white;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 18px;
+      padding: 14px 22px;
+      border: none;
+      border-radius: 12px;
+      background: #2fc3ff;
+      color: #03131d;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .note {
+      margin-top: 16px;
+      color: #9fb3c7;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="toplink" href="index.html">← Back to Home</a>
+
+    <h1>Contact / Inquiry</h1>
+    <p>
+      Use this page for business inquiries, sponsorship opportunities, media requests, or strategic domain-related discussions.
+    </p>
+
+    <div class="card">
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" />
+
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text" placeholder="Company name" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me what you're interested in."></textarea>
+
+        <button type="submit">Send Inquiry</button>
+      </form>
+
+      <div class="note">
+        This is an independent site concept and is not presented as an official corporate website.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
