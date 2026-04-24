@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Pemex Deer Park — How It Works | Deer Park Report</title>
+<meta name="description" content="What is the Pemex Deer Park refinery, how does it work, and why does it matter to the Gulf Coast economy? A complete explainer.">
+<meta name="keywords" content="Pemex Deer Park, how does a refinery work, crude oil refining, Deer Park Texas, petroleum refining process">
+<meta name="referrer" content="no-referrer">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700;1,9..144,900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#080e1a;--navy2:#0d1625;--navy3:#111e30;--amber:#f5a800;--amber2:#e09600;--amber3:#ffc235;--cream:#f0ebe0;--ink:#080e1a;--mid:rgba(240,235,224,0.55);--dim:rgba(240,235,224,0.28);--rule:rgba(240,235,224,0.1);--rule2:rgba(240,235,224,0.06);--mono:'IBM Plex Mono',monospace;--sans:'Space Grotesk',sans-serif;--serif:'Fraunces',Georgia,serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--navy);color:var(--cream);overflow-x:hidden;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.ticker{background:var(--amber);height:28px;overflow:hidden;display:flex;align-items:center}
+.ticker-lbl{font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;background:var(--ink);color:var(--amber);padding:0 1rem;height:100%;display:flex;align-items:center;flex-shrink:0;white-space:nowrap}
+.ticker-scroll{overflow:hidden;flex:1}
+.ticker-track{display:flex;animation:tkr 55s linear infinite;white-space:nowrap}
+@keyframes tkr{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ti{font-family:var(--mono);font-size:.6rem;color:var(--ink);padding:0 2rem;display:flex;align-items:center;gap:.4rem;height:28px}
+.ti .up{color:#0a4a1a;font-weight:500}.ti .dn{color:#7a1010;font-weight:500}
+.ti-sep{color:rgba(8,14,26,.3)}
+.split{display:grid;grid-template-columns:1fr 380px;min-height:100vh}
+.left{background:var(--navy);border-right:1px solid var(--rule);display:flex;flex-direction:column}
+.logo-bar{padding:1.5rem 2.5rem 1.25rem;border-bottom:1px solid var(--rule);display:flex;align-items:flex-end;justify-content:space-between}
+.pub-name{font-family:var(--serif);font-weight:900;font-size:1.9rem;line-height:1;letter-spacing:-.03em;color:var(--cream)}
+.pub-name em{font-style:italic;color:var(--amber)}
+.pub-meta{font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:right;line-height:1.8}
+.left-nav{display:flex;border-bottom:1px solid var(--rule);overflow-x:auto;scrollbar-width:none}
+.left-nav::-webkit-scrollbar{display:none}
+.ln{font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:.65rem 1.1rem;color:var(--dim);border-bottom:2px solid transparent;white-space:nowrap;display:block;transition:color .2s}
+.ln:hover{color:var(--cream)}
+.ln.active{color:var(--amber);border-bottom-color:var(--amber)}
+.left-content{flex:1;overflow-y:auto;padding:0}
+.content-pad{padding:2.5rem}
+.img-banner{width:100%;height:260px;object-fit:cover;display:block;border-bottom:1px solid var(--rule);filter:brightness(.8) saturate(.9)}
+.img-inline{width:100%;object-fit:cover;display:block;border-radius:3px;margin:1.25rem 0 .5rem;filter:brightness(.85) saturate(.9)}
+.img-caption{font-family:var(--mono);font-size:.55rem;letter-spacing:.08em;color:var(--dim);margin-bottom:1.25rem;line-height:1.5}
+.img-caption a{color:var(--dim);text-decoration:underline}
+.left-footer{padding:1rem 2.5rem;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
+.lf-brand{font-family:var(--serif);font-weight:900;font-style:italic;font-size:1rem;color:var(--amber)}
+.lf-copy{font-family:var(--mono);font-size:.55rem;color:var(--dim)}
+.lf-links{display:flex;gap:1rem}
+.lf-links a{font-family:var(--mono);font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);transition:color .2s}
+.lf-links a:hover{color:var(--cream)}
+
+/* PAGE CONTENT */
+.page-kicker{font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.page-kicker::after{content:'';flex:1;max-width:50px;height:1px;background:var(--amber);opacity:.4}
+.page-h1{font-family:var(--serif);font-weight:900;font-size:clamp(1.8rem,4vw,3rem);line-height:1.05;letter-spacing:-.02em;color:var(--cream);margin-bottom:.9rem}
+.page-h1 em{font-style:italic;color:var(--amber3)}
+.page-dek{font-size:1rem;font-weight:300;color:var(--mid);line-height:1.75;max-width:580px;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+
+/* SECTIONS */
+.content-section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid var(--rule)}
+.content-section:last-child{border:none}
+.cs-num{font-family:var(--serif);font-weight:900;font-style:italic;font-size:3.5rem;line-height:1;color:rgba(245,168,0,.15);margin-bottom:.5rem}
+.cs-title{font-family:var(--serif);font-weight:900;font-size:1.4rem;line-height:1.15;letter-spacing:-.02em;color:var(--cream);margin-bottom:.75rem}
+.cs-title em{font-style:italic;color:var(--amber3)}
+.cs-body{font-size:.93rem;color:var(--mid);line-height:1.85}
+.cs-body p+p{margin-top:.85rem}
+.cs-body strong{color:var(--cream);font-weight:600}
+
+/* PROCESS STEPS */
+.process-steps{display:flex;flex-direction:column;gap:1px;background:var(--rule);border-radius:4px;overflow:hidden;margin:1.5rem 0}
+.ps-step{background:var(--navy2);padding:1.1rem 1.5rem;display:grid;grid-template-columns:auto 1fr;gap:1.25rem;align-items:start;transition:background .2s}
+.ps-step:hover{background:var(--navy3)}
+.ps-num{font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);background:rgba(245,168,0,.1);border:1px solid rgba(245,168,0,.2);padding:.3em .6em;border-radius:2px;white-space:nowrap;margin-top:.15rem}
+.ps-title{font-family:var(--sans);font-weight:600;font-size:.9rem;color:var(--cream);margin-bottom:.3rem}
+.ps-body{font-family:var(--mono);font-size:.62rem;color:var(--dim);line-height:1.65}
+.ps-temp{font-family:var(--mono);font-size:.58rem;color:var(--amber);margin-top:.3rem}
+
+/* PRODUCT GRID */
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border-radius:4px;overflow:hidden;margin:1.5rem 0}
+.pg-cell{background:var(--navy2);padding:1rem 1.25rem;transition:background .2s}
+.pg-cell:hover{background:var(--navy3)}
+.pg-pct{font-family:var(--serif);font-weight:900;font-size:1.6rem;line-height:1;margin-bottom:.25rem}
+.pg-pct.g{color:#4ade80}.pg-pct.a{color:var(--amber)}.pg-pct.b{color:#93c5fd}.pg-pct.p{color:#c084fc}
+.pg-name{font-family:var(--sans);font-weight:600;font-size:.82rem;color:var(--cream);margin-bottom:.2rem}
+.pg-desc{font-family:var(--mono);font-size:.58rem;color:var(--dim);line-height:1.55}
+
+/* STAT CALLOUTS */
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border-radius:4px;overflow:hidden;margin:1.5rem 0}
+.sc{background:var(--navy2);padding:1.25rem;text-align:center}
+.sc-val{font-family:var(--serif);font-weight:900;font-size:1.7rem;line-height:1;color:var(--amber);margin-bottom:.25rem}
+.sc-lbl{font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);line-height:1.5}
+
+/* TIMELINE */
+.timeline{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;position:relative}
+.timeline::before{content:'';position:absolute;left:1.1rem;top:0;bottom:0;width:1px;background:var(--rule)}
+.tl-item{display:grid;grid-template-columns:2.5rem 1fr;gap:1rem;padding:.85rem 0;position:relative}
+.tl-dot{width:10px;height:10px;border-radius:50%;background:var(--amber);border:2px solid var(--navy);margin-top:.35rem;position:relative;z-index:1;justify-self:center}
+.tl-year{font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.08em;color:var(--amber);margin-bottom:.2rem}
+.tl-text{font-size:.85rem;color:var(--mid);line-height:1.65}
+
+/* RIGHT PANEL */
+.right{background:var(--amber);position:relative}
+.right-sticky{position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;padding:1.5rem;gap:0;scrollbar-width:none}
+.right-sticky::-webkit-scrollbar{display:none}
+.rp-head{padding-bottom:1.1rem;border-bottom:2px solid rgba(8,14,26,.15);margin-bottom:1.1rem}
+.rp-label{font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(8,14,26,.5);margin-bottom:.2rem}
+.rp-title{font-family:var(--serif);font-weight:900;font-size:1.05rem;line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
+.rp-block{margin-bottom:1.1rem;padding-bottom:1.1rem;border-bottom:1px solid rgba(8,14,26,.12)}
+.rp-block:last-child{border:none;margin-bottom:0}
+.rp-block-title{font-family:var(--mono);font-size:.56rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(8,14,26,.45);margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+.rp-block-title::after{content:'';flex:1;height:1px;background:rgba(8,14,26,.12)}
+.fact-row{padding:.5rem 0;border-bottom:1px solid rgba(8,14,26,.08);display:flex;flex-direction:column;gap:.15rem}
+.fact-row:last-child{border:none}
+.fr-lbl{font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,14,26,.4)}
+.fr-val{font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--ink)}
+.fr-sub{font-family:var(--mono);font-size:.56rem;color:rgba(8,14,26,.45)}
+.process-mini{display:flex;flex-direction:column;gap:.5rem}
+.pm-step{display:flex;align-items:flex-start;gap:.6rem;padding:.5rem;background:rgba(8,14,26,.05);border-radius:3px}
+.pm-arrow{font-family:var(--mono);font-size:.65rem;color:rgba(8,14,26,.35);flex-shrink:0;margin-top:.1rem}
+.pm-text{font-family:var(--mono);font-size:.6rem;color:rgba(8,14,26,.6);line-height:1.5}
+.pm-text strong{color:var(--ink);font-weight:600}
+.nav-links-rp{display:flex;flex-direction:column;gap:.35rem;margin-top:auto}
+.nav-link-rp{display:flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(8,14,26,.5);padding:.5rem .75rem;background:rgba(8,14,26,.05);border-radius:3px;transition:background .2s}
+.nav-link-rp:hover{background:rgba(8,14,26,.12);color:var(--ink)}
+.nav-link-rp.active{background:rgba(8,14,26,.1);color:var(--ink);font-weight:600}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.reveal.on{opacity:1;transform:none}
+.reveal:nth-child(2){transition-delay:.08s}.reveal:nth-child(3){transition-delay:.16s}.reveal:nth-child(4){transition-delay:.24s}
+
+@media(max-width:900px){.split{grid-template-columns:1fr}.right{display:none}.product-grid{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.logo-bar{padding:1.25rem;flex-direction:column;align-items:flex-start;gap:.35rem}.content-pad{padding:1.25rem}.page-h1{font-size:1.6rem}.product-grid,.stat-row{grid-template-columns:1fr}.left-footer{padding:1rem 1.25rem}.img-banner{height:180px}}
+</style>
+</head>
+<body>
+<div class="ticker">
+  <div class="ticker-lbl">Live</div>
+  <div class="ticker-scroll">
+    <div class="ticker-track">
+      <span class="ti">WTI Crude <span class="up">$78.42 ▲1.2%</span></span><span class="ti-sep">·</span>
+      <span class="ti">Brent <span class="up">$82.17 ▲0.9%</span></span><span class="ti-sep">·</span>
+      <span class="ti">GC ULSD <span class="dn">$2.419 ▼0.4%</span></span><span class="ti-sep">·</span>
+      <span class="ti">TX Refinery Utilization <span class="up">91.3%</span></span><span class="ti-sep">·</span>
+      <span class="ti">Houston Ship Channel <span class="up">↑3.1% MoM</span></span><span class="ti-sep">·</span>
+      <span class="ti">Deer Park AQI <span class="up">42 — Good</span></span><span class="ti-sep">·</span>
+      <span class="ti">WTI Crude <span class="up">$78.42 ▲1.2%</span></span><span class="ti-sep">·</span>
+      <span class="ti">Brent <span class="up">$82.17 ▲0.9%</span></span><span class="ti-sep">·</span>
+      <span class="ti">GC ULSD <span class="dn">$2.419 ▼0.4%</span></span><span class="ti-sep">·</span>
+      <span class="ti">TX Refinery Utilization <span class="up">91.3%</span></span><span class="ti-sep">·</span>
+      <span class="ti">Houston Ship Channel <span class="up">↑3.1% MoM</span></span><span class="ti-sep">·</span>
+      <span class="ti">Deer Park AQI <span class="up">42 — Good</span></span><span class="ti-sep">·</span>
+    </div>
+  </div>
+</div>
+
+<div class="split">
+  <div class="left">
+    <div class="logo-bar">
+      <div><div class="pub-name">Deer Park <em>Report</em></div><div style="font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:.25rem">Gulf Coast Energy Intelligence · Independent</div></div>
+      <div class="pub-meta">Friday, Apr 25 2025<br>Deer Park, Texas<br>Vol. IV · Issue 16</div>
+    </div>
+    <div class="left-nav">
+      <a class="ln" href="index.html">Top Stories</a>
+      <a class="ln" href="index.html#ops">Operations</a>
+      <a class="ln active" href="about-pemex.html">About Pemex Deer Park</a>
+      <a class="ln" href="houston.html">Port of Houston</a>
+    </div>
+
+    <div class="left-content">
+      <img class="img-banner" src="https://images.pexels.com/photos/15970032/pexels-photo-15970032.jpeg?auto=compress&cs=tinysrgb&w=1200&h=520&fit=crop" alt="Oil refinery plant with distillation towers and pipelines" referrerpolicy="no-referrer" loading="lazy">
+      <div class="content-pad">
+      <div class="page-kicker">Deep Dive · Explainer</div>
+      <h1 class="page-h1">What Does <em>Pemex Deer Park</em> Actually Do — and How?</h1>
+      <p class="page-dek">A complete explainer on one of the Gulf Coast's most strategically significant refining operations — from crude oil arriving by tanker to finished fuels leaving by pipeline.</p>
+
+      <!-- 1: WHAT IS IT -->
+      <div class="content-section reveal">
+        <div class="cs-num">01</div>
+        <div class="cs-title">What Is the Deer Park Refinery?</div>
+        <div class="cs-body">
+          <p>The Pemex Deer Park refinery is a large-scale petroleum refining complex located in Deer Park, Texas — a petrochemical suburb of Houston sitting directly on the Houston Ship Channel. With a nameplate capacity of <strong>340,000 barrels per day</strong>, it ranks among the twenty largest refineries in the United States and is one of the most complex in terms of its processing capabilities.</p>
+          <p>The facility was originally built and operated as a joint venture between Shell Oil and Pemex beginning in 1993. In 2021, Pemex completed the full acquisition of Shell's 50% stake, making Deer Park a wholly-owned subsidiary of Mexico's state oil company and cementing it as the primary North American downstream asset in Pemex's portfolio.</p>
+          <p>The refinery's complexity rating — measured by the <strong>Nelson Complexity Index</strong> — is among the highest in the Gulf Coast region, meaning it is capable of processing the most difficult, heavy, and sulfur-rich crude oils and converting them into the maximum possible volume of high-value products like gasoline, diesel, and jet fuel.</p>
+        </div>
+        <div class="stat-row" style="margin-top:1.5rem">
+          <div class="sc"><div class="sc-val">340K</div><div class="sc-lbl">Barrels per day nameplate capacity</div></div>
+          <div class="sc"><div class="sc-val">1993</div><div class="sc-lbl">Year operations began as Shell/Pemex JV</div></div>
+          <div class="sc"><div class="sc-val">2021</div><div class="sc-lbl">Year Pemex completed full acquisition</div></div>
+        </div>
+      </div>
+
+      <!-- 2: WHY DEER PARK -->
+      <div class="content-section reveal">
+        <div class="cs-num">02</div>
+        <div class="cs-title">Why Is It Located in <em>Deer Park</em>?</div>
+        <div class="cs-body">
+          <p>Location is everything in refining. The Deer Park site was chosen — and has endured — because of its unique position on the <strong>Houston Ship Channel</strong>, one of the busiest industrial waterways in the world. The Ship Channel gives the refinery direct deep-water marine access, allowing Very Large Crude Carriers (VLCCs) and Aframax tankers to deliver crude oil directly from Mexico, Saudi Arabia, Canada, and the U.S. Gulf of Mexico to the facility's own marine terminal.</p>
+          <p>Beyond water access, Deer Park sits at the heart of the <strong>Texas Gulf Coast petrochemical corridor</strong> — a dense cluster of refineries, chemical plants, and pipelines that gives the facility unparalleled infrastructure connectivity. The refinery connects directly to major pipeline systems including the Colonial Pipeline, the Explorer Pipeline, and multiple crude gathering lines, enabling rapid distribution of finished products to markets across the southeastern United States.</p>
+          <p>The area's existing industrial workforce, deep engineering talent pool at nearby universities, and proximity to major ports of entry for international crude make Deer Park one of the most economically rational locations for a high-complexity refinery on the planet.</p>
+        </div>
+      </div>
+
+      <!-- 3: THE REFINING PROCESS -->
+      <div class="content-section reveal">
+        <div class="cs-num">03</div>
+        <div class="cs-title">How Does <em>Refining</em> Actually Work?</div>
+        <div class="cs-body">
+          <p>Crude oil as it comes out of the ground is a mixture of hundreds of different hydrocarbon molecules of varying sizes and weights. Refining is the industrial process of separating, converting, and upgrading those molecules into useful products. The Deer Park facility runs this process at enormous scale across a series of interconnected processing units.</p>
+        </div>
+        <img class="img-inline" style="height:200px" src="https://images.pexels.com/photos/3421636/pexels-photo-3421636.jpeg?auto=compress&cs=tinysrgb&w=900&h=400&fit=crop" alt="Industrial pipeline corridor inside a processing plant" referrerpolicy="no-referrer" loading="lazy">
+        <div class="img-caption">Inside a large-scale industrial processing plant — similar pipeline infrastructure runs throughout the Deer Park facility connecting distillation, cracking, and hydrotreating units. Photo: Just a Couple Photos / <a href="https://pexels.com" target="_blank">Pexels</a></div>
+        <div class="process-steps">
+          <div class="ps-step">
+            <div class="ps-num">Step 01</div>
+            <div>
+              <div class="ps-title">Crude Receipt & Storage</div>
+              <div class="ps-body">Tankers carrying Mexican Maya, Saudi Arab Medium, and other crude grades dock at the refinery's Ship Channel marine terminal. Crude is unloaded into large storage tanks holding millions of barrels, where it is blended and queued for processing.</div>
+              <div class="ps-temp">Location: Marine terminal + tank farm — upstream of all processing</div>
+            </div>
+          </div>
+          <div class="ps-step">
+            <div class="ps-num">Step 02</div>
+            <div>
+              <div class="ps-title">Atmospheric Distillation (CDU)</div>
+              <div class="ps-body">Crude oil is heated to around 370°C and fed into a tall distillation column. Different hydrocarbon fractions boil off at different temperatures and are collected at various heights: gases at the top, gasoline in the middle, kerosene and diesel lower down, and heavy residue at the bottom. Deer Park operates two atmospheric Crude Distillation Units (CDU-1 and CDU-2).</div>
+              <div class="ps-temp">Operating temp: ~370°C atmospheric pressure</div>
+            </div>
+          </div>
+          <div class="ps-step">
+            <div class="ps-num">Step 03</div>
+            <div>
+              <div class="ps-title">Vacuum Distillation (VDU)</div>
+              <div class="ps-body">The heavy residue from the CDU is fed into the Vacuum Distillation Unit, which operates under reduced pressure. This allows even heavier fractions to be separated without cracking — producing vacuum gas oil and vacuum residue for further processing downstream.</div>
+              <div class="ps-temp">Operating pressure: ~40–100 mmHg vacuum</div>
+            </div>
+          </div>
+          <div class="ps-step">
+            <div class="ps-num">Step 04</div>
+            <div>
+              <div class="ps-title">Fluid Catalytic Cracking (FCC)</div>
+              <div class="ps-body">The FCC unit is the heart of a complex refinery. Heavy gas oil from the distillation units is mixed with a hot catalyst at ~500°C, breaking large hydrocarbon molecules into smaller, more valuable ones — primarily gasoline and diesel components. The spent catalyst is continuously regenerated in a separate vessel and recycled back.</div>
+              <div class="ps-temp">Operating temp: ~480–550°C with catalyst regeneration</div>
+            </div>
+          </div>
+          <div class="ps-step">
+            <div class="ps-num">Step 05</div>
+            <div>
+              <div class="ps-title">Hydrotreating & Hydrocracking</div>
+              <div class="ps-body">Distillate fractions are treated with hydrogen under high pressure to remove sulfur, nitrogen, and metals — producing ultra-low sulfur diesel (ULSD) that meets EPA standards. The Hydrocracker goes further, using hydrogen and catalyst to convert heavy gas oil directly into premium-quality diesel and jet fuel.</div>
+              <div class="ps-temp">Operating pressure: 1,000–2,000+ psi with H₂</div>
+            </div>
+          </div>
+          <div class="ps-step">
+            <div class="ps-num">Step 06</div>
+            <div>
+              <div class="ps-title">Delayed Coking (DCU)</div>
+              <div class="ps-body">The very heaviest residues — which no other unit can upgrade — are fed into the Delayed Coker. At extremely high temperatures, these heavy molecules are thermally cracked into lighter products (naphtha, diesel, gas) while the remaining carbon forms solid petroleum coke, which is sold as an industrial fuel or electrode material.</div>
+              <div class="ps-temp">Operating temp: ~480–510°C in coke drums</div>
+            </div>
+          </div>
+          <div class="ps-step">
+            <div class="ps-num">Step 07</div>
+            <div>
+              <div class="ps-title">Aromatics Extraction & Petrochemicals</div>
+              <div class="ps-body">The naphtha stream from distillation and cracking units is processed to extract high-purity aromatic compounds — benzene, toluene, and xylenes (BTX). These are sold as petrochemical feedstocks to chemical manufacturers producing plastics, synthetic fibers, adhesives, and countless other products along the Gulf Coast corridor.</div>
+              <div class="ps-temp">Products: Benzene, toluene, para-xylene (PX), ortho-xylene</div>
+            </div>
+          </div>
+          <div class="ps-step">
+            <div class="ps-num">Step 08</div>
+            <div>
+              <div class="ps-title">Blending, Quality Control & Distribution</div>
+              <div class="ps-body">Before leaving the refinery, all products are precisely blended to meet customer and regulatory specifications. The on-site ISO-certified laboratory tests every batch. Finished products flow out via Colonial Pipeline (east/southeast), Explorer Pipeline (midwest), local product pipelines, and marine vessels at the Ship Channel terminal.</div>
+              <div class="ps-temp">Destination: Colonial Pipeline → SE USA · Explorer → Midwest · Marine → export</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: WHAT COMES OUT -->
+      <div class="content-section reveal">
+        <div class="cs-num">04</div>
+        <div class="cs-title">What Does the Refinery <em>Produce</em>?</div>
+        <div class="cs-body">
+          <p>Every barrel of crude oil that enters the Deer Park refinery exits as one of several refined products. The facility's high complexity rating allows it to maximize the yield of the most valuable light products — particularly gasoline and diesel — from even the heaviest crude inputs.</p>
+        </div>
+        <div class="product-grid">
+          <div class="pg-cell"><div class="pg-pct g">38%</div><div class="pg-name">Gasoline</div><div class="pg-desc">Regular and premium motor fuel for U.S. Southeast markets via Colonial Pipeline</div></div>
+          <div class="pg-cell"><div class="pg-pct g">29%</div><div class="pg-name">Ultra-Low Sulfur Diesel</div><div class="pg-desc">On-road diesel meeting EPA Tier 3 sulfur specifications (&lt;15 ppm S)</div></div>
+          <div class="pg-cell"><div class="pg-pct b">14%</div><div class="pg-name">Jet Fuel / Kerosene</div><div class="pg-desc">Aviation turbine fuel for Houston-area airports and export markets</div></div>
+          <div class="pg-cell"><div class="pg-pct p">11%</div><div class="pg-name">Petrochemical Feedstocks</div><div class="pg-desc">Benzene, toluene, xylenes, and propylene sold to Gulf Coast chemical manufacturers</div></div>
+          <div class="pg-cell"><div class="pg-pct a">5%</div><div class="pg-name">Petroleum Coke</div><div class="pg-desc">High-carbon solid sold as industrial fuel and electrode material for aluminum smelting</div></div>
+          <div class="pg-cell"><div class="pg-pct" style="color:var(--dim)">3%</div><div class="pg-name">Other / Residuals</div><div class="pg-desc">Fuel oil, sulfur, and process gases consumed internally or sold to specialty markets</div></div>
+        </div>
+      </div>
+
+      <!-- 5: HISTORY -->
+      <div class="content-section reveal">
+        <div class="cs-num">05</div>
+        <div class="cs-title">A Brief <em>History</em> of the Facility</div>
+        <img class="img-inline" style="height:190px" src="https://images.pexels.com/photos/208661/pexels-photo-208661.jpeg?auto=compress&cs=tinysrgb&w=900&h=380&fit=crop" alt="Heavy industrial refinery structure with pipes and scaffolding" referrerpolicy="no-referrer" loading="lazy">
+        <div class="img-caption">The structural complexity of large-scale refining infrastructure — the Deer Park site has been continuously expanded and upgraded since operations began in 1993. Photo: Pixabay / <a href="https://pexels.com" target="_blank">Pexels</a></div>
+        <div class="cs-body"><p>The Deer Park refinery has operated continuously for over three decades, evolving from a bilateral joint venture into one of Mexico's most important international industrial assets.</p></div>
+        <div class="timeline">
+          <div class="tl-item"><span class="tl-dot"></span><div><div class="tl-year">1993</div><div class="tl-text">Shell Oil and Pemex form a 50/50 joint venture. The Deer Park refinery begins operations as one of the first major cross-border industrial partnerships between a U.S. major and Mexico's national oil company.</div></div></div>
+          <div class="tl-item"><span class="tl-dot"></span><div><div class="tl-year">1997–2005</div><div class="tl-text">Significant capital investment expands the facility's complexity, adding the Fluid Catalytic Cracker and Delayed Coker units that allow the refinery to process Mexico's heavy Maya crude far more profitably than simpler refineries.</div></div></div>
+          <div class="tl-item"><span class="tl-dot"></span><div><div class="tl-year">2019</div><div class="tl-text">A major industrial fire at an adjacent ITC chemical storage terminal briefly disrupts Ship Channel operations and draws international attention to the Deer Park industrial corridor. The refinery itself is not directly impacted but operations are temporarily affected by the emergency response.</div></div></div>
+          <div class="tl-item"><span class="tl-dot"></span><div><div class="tl-year">2021</div><div class="tl-text">Pemex acquires Shell's full 50% stake in the joint venture for approximately $596 million, making Deer Park a wholly-owned Pemex subsidiary. The acquisition is a cornerstone of Pemex CEO Octavio Romero Oropeza's downstream strategy.</div></div></div>
+          <div class="tl-item"><span class="tl-dot"></span><div><div class="tl-year">2024–2025</div><div class="tl-text">Pemex completes a $380 million reliability turnaround — the largest at the site in a decade — upgrading distillation, cracking, and environmental control infrastructure. Utilization returns to 91% of nameplate capacity, signalling long-term commitment to the asset.</div></div></div>
+        </div>
+      </div>
+
+      <!-- 6: WORKFORCE & COMMUNITY -->
+      <div class="content-section reveal">
+        <div class="cs-num">06</div>
+        <div class="cs-title">Workforce, Community &amp; <em>Economic Impact</em></div>
+        <div class="cs-body">
+          <p>The Deer Park refinery directly employs more than <strong>1,800 people</strong> in refinery operations, engineering, safety, environmental, logistics, and administrative roles. When contractor and supplier employment is included, the facility supports an estimated 6,000–8,000 jobs across the Harris County region.</p>
+          <p>The facility contributes an estimated <strong>$2.1 billion annually</strong> to the Southeast Texas regional economy through wages, local procurement, taxes, and capital expenditure. It is consistently ranked among Harris County's largest employers and taxpayers.</p>
+          <p>Community investment programs include a longstanding STEM education partnership with <strong>Deer Park Independent School District</strong>, active participation in the Local Emergency Planning Committee, mutual aid agreements with Harris County fire and emergency services, and a multi-year wetland restoration partnership with Texas Parks &amp; Wildlife covering more than 800 acres of Galveston Bay coastal habitat.</p>
+        </div>
+        <div class="stat-row" style="margin-top:1.5rem">
+          <div class="sc"><div class="sc-val">1,800+</div><div class="sc-lbl">Direct employees on site</div></div>
+          <div class="sc"><div class="sc-val">$2.1B</div><div class="sc-lbl">Annual regional economic contribution</div></div>
+          <div class="sc"><div class="sc-val">$4.2M</div><div class="sc-lbl">STEM education investment in Deer Park ISD</div></div>
+        </div>
+      </div>
+
+    </div><!-- /content-pad -->
+    </div><!-- /left-content -->
+
+    <div class="left-footer">
+      <div class="lf-brand">Deer Park Report</div>
+      <div class="lf-copy">Independent · Not affiliated with Pemex · Deer Park, Texas</div>
+      <div class="lf-links">
+        <a href="index.html">Home</a>
+        <a href="houston.html">Port of Houston</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right">
+    <div class="right-sticky">
+      <div class="rp-head"><div class="rp-label">About Pemex Deer Park</div><div class="rp-title">Quick Reference Facts</div></div>
+      <div class="rp-block">
+        <div class="rp-block-title">Facility Basics</div>
+        <div class="fact-row"><div class="fr-lbl">Location</div><div class="fr-val">Deer Park, Harris County, TX</div></div>
+        <div class="fact-row"><div class="fr-lbl">Owner</div><div class="fr-val">Pemex (100% since 2021)</div><div class="fr-sub">Prev. 50/50 JV with Shell Oil</div></div>
+        <div class="fact-row"><div class="fr-lbl">Capacity</div><div class="fr-val">340,000 bpd</div><div class="fr-sub">Top 20 U.S. refineries by capacity</div></div>
+        <div class="fact-row"><div class="fr-lbl">Complexity</div><div class="fr-val">High — Nelson Index 12+</div><div class="fr-sub">Can process heavy sour crudes</div></div>
+        <div class="fact-row"><div class="fr-lbl">Founded</div><div class="fr-val">1993</div></div>
+        <div class="fact-row"><div class="fr-lbl">Workforce</div><div class="fr-val">1,800+ direct employees</div></div>
+      </div>
+      <div class="rp-block">
+        <div class="rp-block-title">The Refining Process — Summary</div>
+        <div class="process-mini">
+          <div class="pm-step"><div class="pm-arrow">01</div><div class="pm-text"><strong>Crude arrives</strong> by tanker via Houston Ship Channel marine terminal</div></div>
+          <div class="pm-step"><div class="pm-arrow">02</div><div class="pm-text"><strong>Distillation</strong> separates crude into fractions by boiling point</div></div>
+          <div class="pm-step"><div class="pm-arrow">03</div><div class="pm-text"><strong>Cracking</strong> (FCC + Hydrocracker) upgrades heavy fractions into gasoline &amp; diesel</div></div>
+          <div class="pm-step"><div class="pm-arrow">04</div><div class="pm-text"><strong>Coking</strong> converts the heaviest residues into lighter products + petroleum coke</div></div>
+          <div class="pm-step"><div class="pm-arrow">05</div><div class="pm-text"><strong>Treating</strong> removes sulfur to meet EPA &lt;15 ppm ULSD standards</div></div>
+          <div class="pm-step"><div class="pm-arrow">06</div><div class="pm-text"><strong>Blending &amp; dispatch</strong> — products exit via Colonial Pipeline, Explorer, and marine</div></div>
+        </div>
+      </div>
+      <div class="rp-block">
+        <div class="rp-block-title">Primary Crude Sources</div>
+        <div class="fact-row"><div class="fr-lbl">Mexican Maya (heavy sour)</div><div class="fr-val">42% of slate</div></div>
+        <div class="fact-row"><div class="fr-lbl">WTI / Domestic Light</div><div class="fr-val">28%</div></div>
+        <div class="fact-row"><div class="fr-lbl">Saudi Arab Medium</div><div class="fr-val">18%</div></div>
+        <div class="fact-row"><div class="fr-lbl">Canadian Heavy / Other</div><div class="fr-val">12%</div></div>
+      </div>
+      <div class="nav-links-rp">
+        <a class="nav-link-rp" href="index.html">← Back to Top Stories</a>
+        <a class="nav-link-rp" href="houston.html">Port of Houston →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const rObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>rObs.observe(el));
+</script>
+</body>
+</html>
