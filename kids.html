@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1a2b4a">
+<title>Deer Park for Kids — Air, Safety & How a Refinery Works | Deer Park Report</title>
+<meta name="description" content="A friendly, free learning page for Deer Park, Texas kids and families. Today's air quality in plain language, what a refinery does, what to do during a shelter-in-place, a 5-question safety quiz, and a printable activity sheet.">
+<meta name="author" content="Deer Park Report">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.pemexdeerpark.com/kids">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deer Park for Kids — Air, Safety & How a Refinery Works">
+<meta property="og:description" content="A free, friendly learning page for Deer Park families: today's air quality, what a refinery does, shelter-in-place steps, a quick quiz, and a printable activity sheet.">
+<meta property="og:url" content="https://www.pemexdeerpark.com/kids">
+<meta property="og:site_name" content="Deer Park Report">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deer Park for Kids — Air, Safety & How a Refinery Works">
+<meta name="twitter:description" content="A free learning page for Deer Park kids and families.">
+
+<!-- Schema.org LearningResource -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LearningResource",
+      "@id": "https://www.pemexdeerpark.com/kids#resource",
+      "name": "Deer Park for Kids — Air Quality, Safety, and How a Refinery Works",
+      "description": "A free, kid-friendly learning page covering local air quality (AQI), what a refinery does, what to do during a shelter-in-place, a short safety quiz, and a printable activity sheet for the Deer Park, Texas community.",
+      "url": "https://www.pemexdeerpark.com/kids",
+      "inLanguage": "en-US",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "learningResourceType": ["Interactive Resource", "Activity", "Quiz", "Worksheet"],
+      "educationalLevel": ["Elementary School", "Middle School"],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": ["student", "teacher", "parent"]
+      },
+      "typicalAgeRange": "7-13",
+      "teaches": [
+        "What the Air Quality Index (AQI) means",
+        "How an oil refinery works",
+        "Personal safety during a shelter-in-place advisory",
+        "Local environmental awareness"
+      ],
+      "about": [
+        {"@type": "Thing", "name": "Air quality"},
+        {"@type": "Thing", "name": "Oil refinery"},
+        {"@type": "Thing", "name": "Emergency preparedness"},
+        {"@type": "Place", "name": "Deer Park, Texas"}
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deer Park Report",
+        "url": "https://www.pemexdeerpark.com"
+      },
+      "hasPart": [
+        {"@type": "WebPageElement", "name": "Today's Air — Stoplight Dashboard"},
+        {"@type": "WebPageElement", "name": "What is a Refinery? — Scroll Story"},
+        {"@type": "WebPageElement", "name": "Shelter-in-Place Safety Checklist"},
+        {"@type": "Quiz", "name": "Air & Safety Quiz (5 questions)"},
+        {"@type": "WebPageElement", "name": "Printable Activity Sheet"}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pemexdeerpark.com/"},
+        {"@type": "ListItem", "position": 2, "name": "For Kids & Families", "item": "https://www.pemexdeerpark.com/kids"}
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* ---------- Design tokens ---------- */
+:root{
+  --paper:#faf7f2;
+  --paper-2:#f3eee5;
+  --ink:#1a2b4a;
+  --ink-2:#3a4a66;
+  --muted:#6b7a90;
+  --rule:#d9d2c4;
+  --accent:#1a4d8f;        /* civic navy-blue */
+  --accent-soft:#e6efff;
+  --good:#3aa55a;          /* green = play outside */
+  --moderate:#e8b830;      /* yellow = ok */
+  --usg:#e07a2f;           /* orange = take it easy */
+  --unhealthy:#cf3a3a;     /* red = stay inside */
+  --very-unhealthy:#7a3aa5;/* purple */
+  --hazardous:#5a1a1a;     /* maroon */
+  --shadow:0 1px 0 rgba(26,43,74,.06), 0 8px 24px rgba(26,43,74,.06);
+  --radius:14px;
+  --serif:"Iowan Old Style","Charter","Georgia","Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Inter","Helvetica Neue",Arial,sans-serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--sans);
+  font-size:18px;
+  line-height:1.55;
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible{
+  outline:3px solid #ffd34d; outline-offset:2px; border-radius:4px;
+}
+
+/* ---------- Skip link ---------- */
+.skip{
+  position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;
+  padding:.6rem 1rem;border-radius:0 0 8px 0;z-index:100;
+}
+.skip:focus{left:0}
+
+/* ---------- Header (matches parent site cues) ---------- */
+.site-header{
+  border-bottom:1px solid var(--rule);
+  background:var(--paper);
+  position:sticky;top:0;z-index:30;
+  backdrop-filter:saturate(140%) blur(6px);
+  background:rgba(250,247,242,.92);
+}
+.site-header .wrap{
+  max-width:1100px;margin:0 auto;padding:.85rem 1.1rem;
+  display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+}
+.brand{
+  font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--ink);
+  text-decoration:none;letter-spacing:-.01em;
+}
+.brand em{font-style:italic;color:var(--accent)}
+.crumbs{font-size:.85rem;color:var(--muted);margin-left:.25rem}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--accent)}
+.header-spacer{flex:1}
+.nav-jump{display:flex;gap:.4rem;flex-wrap:wrap}
+.nav-jump a{
+  font-size:.82rem;text-decoration:none;color:var(--ink-2);
+  padding:.35rem .7rem;border:1px solid var(--rule);border-radius:999px;
+  background:#fff;
+}
+.nav-jump a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ---------- Hero ---------- */
+.hero{
+  max-width:1100px;margin:0 auto;padding:2.4rem 1.1rem 1.4rem;
+}
+.eyebrow{
+  display:inline-block;
+  font-family:var(--sans);font-size:.78rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.12em;
+  color:var(--accent);background:var(--accent-soft);
+  padding:.3rem .65rem;border-radius:999px;
+}
+.hero h1{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(2rem,5vw,3.4rem);
+  line-height:1.1;letter-spacing:-.02em;
+  margin:.6rem 0 .6rem;
+}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lede{
+  font-size:1.15rem;color:var(--ink-2);max-width:62ch;margin:0 0 1rem;
+}
+.hero .meta{
+  font-size:.85rem;color:var(--muted);
+  display:flex;gap:1.1rem;flex-wrap:wrap;align-items:center;
+  border-top:1px solid var(--rule);padding-top:.8rem;margin-top:1rem;
+}
+.hero .meta .dot{width:6px;height:6px;border-radius:50%;background:var(--good);display:inline-block;margin-right:.35rem}
+
+/* ---------- Section shell ---------- */
+section.module{
+  max-width:1100px;margin:0 auto;padding:2.6rem 1.1rem;
+  border-top:1px solid var(--rule);
+}
+section.module h2{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(1.6rem,3.3vw,2.2rem);
+  letter-spacing:-.01em;margin:0 0 .35rem;
+}
+section.module h2 .num{
+  display:inline-block;font-family:var(--sans);font-size:.7rem;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  background:var(--accent-soft);padding:.25rem .55rem;border-radius:999px;
+  vertical-align:middle;margin-right:.6rem;position:relative;top:-.2rem;
+}
+section.module .kicker{color:var(--muted);font-size:.95rem;margin:0 0 1.3rem}
+
+/* ---------- Module 1: AQI stoplight ---------- */
+.aqi-card{
+  background:#fff;border:1px solid var(--rule);border-radius:var(--radius);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.aqi-grid{
+  display:grid;grid-template-columns:1fr;gap:0;
+}
+@media (min-width:780px){
+  .aqi-grid{grid-template-columns:minmax(260px,340px) 1fr}
+}
+.stoplight{
+  background:#0f1a2e;
+  padding:1.6rem;display:flex;flex-direction:column;align-items:center;gap:.7rem;
+  color:#fff;
+}
+.stoplight .light{
+  width:120px;height:120px;border-radius:50%;
+  background:#1f2a40;border:5px solid #283250;
+  position:relative;transition:all .35s ease;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:1.6rem;font-weight:700;color:rgba(255,255,255,.25);
+}
+.stoplight .light.on{
+  box-shadow:0 0 0 4px rgba(255,255,255,.05), 0 0 38px var(--lc,#fff);
+  background:var(--lc,#888);color:#fff;border-color:rgba(255,255,255,.2);
+}
+.stoplight .lights-row{display:flex;flex-direction:column;gap:.5rem;align-items:center}
+@media (min-width:380px){
+  .stoplight .lights-row{flex-direction:row;gap:.7rem}
+  .stoplight .light{width:74px;height:74px;font-size:1.05rem}
+  .stoplight .light.on{width:96px;height:96px;font-size:1.3rem}
+}
+.stoplight .legend{font-size:.78rem;color:#aab6cf;text-align:center;line-height:1.3}
+.stoplight .legend strong{color:#fff;display:block;font-size:.95rem;margin-bottom:.15rem}
+.aqi-readout{padding:1.6rem 1.4rem}
+.aqi-readout .label{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:600}
+.aqi-readout .value{
+  font-family:var(--serif);font-size:3.4rem;font-weight:700;line-height:1;
+  margin:.2rem 0 .3rem;color:var(--ink);
+}
+.aqi-readout .value small{font-size:.95rem;color:var(--muted);font-weight:400;font-family:var(--sans);margin-left:.4rem}
+.aqi-readout .badge{
+  display:inline-block;padding:.3rem .65rem;border-radius:999px;
+  background:var(--good);color:#fff;font-weight:600;font-size:.85rem;
+}
+.aqi-readout .why{
+  margin-top:1rem;font-size:1rem;color:var(--ink-2);max-width:54ch;
+}
+.aqi-readout .why strong{color:var(--ink)}
+.aqi-readout .source{margin-top:1rem;font-size:.78rem;color:var(--muted)}
+
+/* ---------- Module 2: Refinery scroll explainer ---------- */
+.scrolly{
+  display:grid;grid-template-columns:1fr;gap:1.6rem;align-items:start;
+}
+@media (min-width:880px){
+  .scrolly{grid-template-columns:1fr 1.1fr;gap:2.2rem}
+}
+.scrolly .sticky{
+  position:sticky;top:80px;align-self:start;
+  background:#fff;border:1px solid var(--rule);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:1.2rem;
+}
+.scrolly .sticky svg{width:100%;height:auto;max-height:340px}
+.scrolly .stage-label{
+  font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--muted);font-weight:600;text-align:center;margin-top:.6rem;
+}
+.scrolly .stage-label strong{color:var(--ink)}
+.scroll-step{
+  background:#fff;border:1px solid var(--rule);border-radius:var(--radius);
+  padding:1.4rem 1.4rem;margin-bottom:1.1rem;
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+.scroll-step.active{border-color:var(--accent);box-shadow:var(--shadow)}
+.scroll-step h3{
+  font-family:var(--serif);font-size:1.4rem;font-weight:700;margin:0 0 .4rem;
+}
+.scroll-step .num{
+  display:inline-block;font-family:var(--sans);font-size:.75rem;font-weight:700;
+  color:var(--accent);background:var(--accent-soft);
+  padding:.18rem .5rem;border-radius:6px;margin-bottom:.5rem;letter-spacing:.06em;
+}
+.scroll-step p{margin:.3rem 0;color:var(--ink-2)}
+
+/* SVG morph stages */
+.refsvg .stage{opacity:0;transition:opacity .5s ease}
+.refsvg .stage.show{opacity:1}
+.refsvg .pulse{animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+
+/* ---------- Module 3: Safety checklist ---------- */
+.shero-card{
+  background:linear-gradient(180deg,#fff 0%,#fffaf0 100%);
+  border:1px solid var(--rule);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:1.6rem;
+}
+.shero-head{display:flex;align-items:center;gap:.9rem;margin-bottom:1rem;flex-wrap:wrap}
+.shero-head svg{width:54px;height:54px;flex:none}
+.shero-head h3{font-family:var(--serif);font-size:1.35rem;margin:0}
+.shero-head p{margin:.1rem 0 0;color:var(--ink-2);font-size:.95rem}
+.checklist{list-style:none;padding:0;margin:0;display:grid;gap:.55rem}
+.checklist li{
+  display:flex;align-items:flex-start;gap:.85rem;
+  background:#fff;border:1px solid var(--rule);border-radius:10px;
+  padding:.85rem 1rem;cursor:pointer;
+  transition:background .2s, border-color .2s;
+}
+.checklist li:hover{border-color:var(--accent)}
+.checklist .box{
+  width:28px;height:28px;border-radius:8px;border:2px solid var(--ink-2);
+  flex:none;display:flex;align-items:center;justify-content:center;
+  background:#fff;transition:all .2s;
+}
+.checklist .box svg{width:18px;height:18px;opacity:0;transform:scale(.6);transition:all .2s}
+.checklist li.done{background:#eef7ec;border-color:var(--good)}
+.checklist li.done .box{background:var(--good);border-color:var(--good)}
+.checklist li.done .box svg{opacity:1;transform:scale(1)}
+.checklist li.done .text{color:var(--ink-2);text-decoration:line-through;text-decoration-color:rgba(58,165,90,.7);text-decoration-thickness:2px}
+.checklist .text{font-weight:600}
+.checklist .hint{display:block;font-weight:400;color:var(--muted);font-size:.88rem;margin-top:.15rem}
+.shero-actions{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-top:1.1rem;flex-wrap:wrap;gap:.8rem;
+}
+.progress-text{font-size:.92rem;color:var(--ink-2)}
+.progress-text strong{color:var(--accent)}
+.btn{
+  font-family:var(--sans);font-size:.9rem;font-weight:600;
+  padding:.55rem 1rem;border-radius:8px;border:1px solid var(--rule);
+  background:#fff;color:var(--ink);cursor:pointer;
+}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-primary:hover{background:#143d70;color:#fff}
+
+/* ---------- Module 4: Quiz ---------- */
+.quiz-card{
+  background:#fff;border:1px solid var(--rule);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:1.6rem;
+}
+.quiz-progress{
+  height:6px;background:var(--paper-2);border-radius:99px;overflow:hidden;
+  margin-bottom:1.3rem;
+}
+.quiz-progress .bar{height:100%;background:var(--accent);width:0%;transition:width .35s}
+.quiz-step{display:none}
+.quiz-step.active{display:block}
+.quiz-q{font-family:var(--serif);font-size:1.35rem;line-height:1.3;margin:0 0 1rem}
+.quiz-num{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:600;margin-bottom:.4rem}
+.quiz-options{display:grid;gap:.55rem}
+.quiz-option{
+  text-align:left;background:#fff;border:1.5px solid var(--rule);border-radius:10px;
+  padding:.95rem 1.1rem;font-size:1rem;color:var(--ink);cursor:pointer;
+  transition:all .15s;font-family:var(--sans);
+}
+.quiz-option:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+.quiz-option.correct{border-color:var(--good);background:#eef7ec;color:#1f5c30}
+.quiz-option.wrong{border-color:var(--unhealthy);background:#fbeded;color:#7a2020}
+.quiz-explain{
+  margin-top:1rem;padding:.85rem 1rem;background:var(--paper-2);
+  border-left:3px solid var(--accent);border-radius:6px;font-size:.95rem;color:var(--ink-2);
+  display:none;
+}
+.quiz-explain.show{display:block}
+.quiz-next{margin-top:1rem;display:none}
+.quiz-next.show{display:inline-block}
+.quiz-result{text-align:center;padding:1rem 0}
+.quiz-result svg.badge{width:170px;height:170px;margin:0 auto .8rem}
+.quiz-result h3{font-family:var(--serif);font-size:1.8rem;margin:.3rem 0}
+.quiz-result .score{font-size:1.05rem;color:var(--ink-2);margin:0 0 1rem}
+.quiz-result .restart{margin-top:.7rem}
+
+/* ---------- Module 5: Printable activity sheet ---------- */
+.activity-card{
+  background:#fff;border:1px solid var(--rule);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:1.6rem;
+}
+.activity-tip{
+  background:var(--accent-soft);border-radius:8px;padding:.85rem 1rem;
+  font-size:.92rem;color:var(--ink-2);margin-bottom:1.4rem;
+}
+.activity-tip strong{color:var(--accent)}
+.activity-grid{display:grid;gap:1.4rem}
+@media (min-width:780px){.activity-grid{grid-template-columns:1.2fr 1fr}}
+.activity-block{
+  border:1px solid var(--rule);border-radius:10px;padding:1rem;
+}
+.activity-block h3{
+  font-family:var(--serif);font-size:1.15rem;margin:0 0 .45rem;
+}
+.activity-block p{margin:0 0 .7rem;color:var(--ink-2);font-size:.95rem}
+.coloring svg{width:100%;max-width:520px;margin:0 auto;display:block}
+.wordsearch{
+  display:grid;grid-template-columns:repeat(10,1fr);
+  gap:2px;font-family:var(--serif);font-weight:600;font-size:1rem;
+  border:1.5px solid var(--ink);background:var(--ink);
+  max-width:360px;margin:0 auto;
+}
+.wordsearch span{
+  background:#fff;aspect-ratio:1;display:flex;align-items:center;justify-content:center;
+  text-transform:uppercase;color:var(--ink);
+}
+.wordlist{
+  display:flex;flex-wrap:wrap;gap:.4rem .6rem;margin-top:.7rem;
+  font-size:.9rem;color:var(--ink-2);
+}
+.wordlist span{
+  background:var(--paper-2);padding:.18rem .55rem;border-radius:5px;
+  font-family:var(--serif);text-transform:uppercase;letter-spacing:.04em;
+}
+.fillin{display:grid;gap:.5rem;margin-top:.4rem}
+.fillin .row{display:flex;gap:.5rem;align-items:baseline;font-size:.95rem}
+.fillin .blank{flex:1;border-bottom:1.5px solid var(--ink);min-width:80px;height:1.2rem}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  border-top:1px solid var(--rule);background:var(--paper-2);
+  margin-top:3rem;padding:2.2rem 1.1rem 2.6rem;
+}
+.site-footer .wrap{max-width:1100px;margin:0 auto;display:grid;gap:1.4rem}
+@media (min-width:780px){.site-footer .wrap{grid-template-columns:1.3fr 1fr 1fr}}
+.site-footer h4{
+  font-family:var(--sans);font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--muted);margin:0 0 .55rem;
+}
+.site-footer p{margin:0 0 .5rem;color:var(--ink-2);font-size:.92rem}
+.site-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:.3rem}
+.site-footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+.site-footer a:hover{border-color:var(--accent);color:var(--accent)}
+.site-footer .fineprint{font-size:.8rem;color:var(--muted);margin-top:1.2rem;border-top:1px solid var(--rule);padding-top:1rem;max-width:1100px;margin-left:auto;margin-right:auto}
+.site-footer .fineprint em{font-style:italic}
+
+/* ---------- Print styles: hide interactive, show activity sheet ---------- */
+@media print{
+  @page{size:letter;margin:.6in}
+  html,body{background:#fff;color:#000;font-size:11pt}
+  .site-header,.hero .meta,.nav-jump,.crumbs,
+  #aqi-module,#refinery-module,#shelter-module,#quiz-module,
+  .site-footer .links-col,.activity-tip,.btn{display:none !important}
+  .hero{padding:0 0 .4in}
+  .hero h1{font-size:22pt}
+  .hero .lede{font-size:11pt}
+  .eyebrow{display:none}
+  section.module{border-top:none;padding:0;page-break-inside:avoid}
+  .activity-card{box-shadow:none;border:none;padding:0}
+  .activity-block{border:1.5px solid #000;page-break-inside:avoid}
+  .wordsearch{border-color:#000;background:#000}
+  .coloring svg *{stroke:#000 !important;fill:none !important}
+  .coloring svg .fill-allowed{fill:#fff !important;stroke:#000 !important}
+  .print-only{display:block !important}
+  .site-footer{background:#fff;border-top:1px solid #000;margin-top:.4in;padding:.3in 0 0}
+  .site-footer .fineprint{color:#000}
+}
+.print-only{display:none}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="wrap">
+    <a class="brand" href="/">Deer Park <em>Report</em></a>
+    <span class="crumbs"><a href="/">Home</a> &rsaquo; For Kids &amp; Families</span>
+    <span class="header-spacer"></span>
+    <nav class="nav-jump" aria-label="Jump to section">
+      <a href="#aqi-module">Today&rsquo;s Air</a>
+      <a href="#refinery-module">What&rsquo;s a Refinery?</a>
+      <a href="#shelter-module">Safety Steps</a>
+      <a href="#quiz-module">Quiz</a>
+      <a href="#activity-module">Print &amp; Color</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============== HERO ============== -->
+<section class="hero" aria-labelledby="hero-h1">
+  <span class="eyebrow">For Kids &amp; Families · Free Learning Resource</span>
+  <h1 id="hero-h1">Deer Park, <em>explained</em> &mdash; the air, the plants, and how to stay safe.</h1>
+  <p class="lede">A friendly page for Deer Park kids, families, and classrooms. Find out what today&rsquo;s air is doing, how an oil refinery actually works, what to do if you ever hear &ldquo;shelter in place,&rdquo; and try a quick quiz. There&rsquo;s a printable activity sheet at the bottom.</p>
+  <div class="meta">
+    <span><span class="dot"></span>Updated daily &middot; Built for ages ~7&ndash;13</span>
+    <span>&middot; Reading level: grade 4&ndash;6</span>
+    <span>&middot; <a href="#activity-module">Print the activity sheet</a></span>
+  </div>
+</section>
+
+<!-- ============== MODULE 1: AQI STOPLIGHT ============== -->
+<section id="aqi-module" class="module" aria-labelledby="aqi-h2">
+  <h2 id="aqi-h2"><span class="num">01</span>What&rsquo;s the air like today?</h2>
+  <p class="kicker">A simple stoplight tells you if it&rsquo;s a good day to play outside.</p>
+
+  <div class="aqi-card">
+    <div class="aqi-grid">
+      <div class="stoplight" aria-hidden="true">
+        <div class="lights-row" id="stoplight-row">
+          <div class="light" data-band="good"      style="--lc:#3aa55a">GO</div>
+          <div class="light" data-band="moderate"  style="--lc:#e8b830">OK</div>
+          <div class="light" data-band="usg"       style="--lc:#e07a2f">EASY</div>
+          <div class="light" data-band="unhealthy" style="--lc:#cf3a3a">IN</div>
+        </div>
+        <div class="legend">
+          <strong>Green</strong>play outside &middot; <strong>Yellow</strong>okay &middot; <strong>Orange</strong>take it easy &middot; <strong>Red</strong>stay inside
+        </div>
+      </div>
+
+      <div class="aqi-readout">
+        <div class="label">Deer Park AQI right now</div>
+        <div class="value" data-aqi-value>—<small data-aqi-band>checking…</small></div>
+        <span class="badge" data-aqi-badge>Loading</span>
+        <p class="why">
+          <strong>What&rsquo;s AQI?</strong> The Air Quality Index is a number that tells you how clean or dirty the air is outside. <strong>Lower is better.</strong> The EPA measures tiny bits of stuff floating in the air &mdash; like dust, smoke, and gases &mdash; and turns it into one easy number from 0 to 500.
+        </p>
+        <p class="why" data-aqi-message>When the number is low, the air is clean and you can play outside as long as you want. When the number gets higher, kids, older folks, and people with asthma should slow down or stay indoors.</p>
+        <div class="source">Source: EPA AirNow / TCEQ &middot; <a href="https://www.airnow.gov/?city=Deer%20Park&amp;state=TX&amp;country=USA" rel="noopener">See full data &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== MODULE 2: REFINERY EXPLAINER ============== -->
+<section id="refinery-module" class="module" aria-labelledby="ref-h2">
+  <h2 id="ref-h2"><span class="num">02</span>What&rsquo;s a refinery, anyway?</h2>
+  <p class="kicker">Scroll through the story. The picture changes as you read.</p>
+
+  <div class="scrolly">
+    <!-- Sticky illustration -->
+    <div class="sticky" aria-hidden="true">
+      <svg class="refsvg" viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of an oil refinery and its parts">
+        <title>Refinery diagram</title>
+        <!-- sky -->
+        <rect x="0" y="0" width="400" height="240" fill="#e9f0fb"/>
+        <!-- ground -->
+        <rect x="0" y="240" width="400" height="80" fill="#d9d2c4"/>
+
+        <!-- STAGE 1: oil arrives by ship/pipeline -->
+        <g class="stage" data-stage="1">
+          <!-- water -->
+          <rect x="0" y="240" width="400" height="20" fill="#7fb0d6"/>
+          <!-- ship -->
+          <g transform="translate(40,210)">
+            <rect x="0" y="14" width="120" height="22" fill="#1a4d8f"/>
+            <polygon points="120,14 150,14 140,36 120,36" fill="#1a4d8f"/>
+            <rect x="20" y="0" width="60" height="14" fill="#fff" stroke="#1a4d8f" stroke-width="2"/>
+            <circle cx="50" cy="42" r="4" fill="#fff"/>
+            <text x="60" y="11" font-size="8" font-family="sans-serif" fill="#1a4d8f" text-anchor="middle">CRUDE OIL</text>
+          </g>
+          <!-- arrow into facility -->
+          <path d="M180 232 L260 232" stroke="#1a4d8f" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="260,232 250,226 250,238" fill="#1a4d8f"/>
+          <!-- tank -->
+          <ellipse cx="320" cy="232" rx="38" ry="10" fill="#bcc5d4"/>
+          <rect x="282" y="200" width="76" height="32" fill="#cfd6e2"/>
+          <ellipse cx="320" cy="200" rx="38" ry="8" fill="#e6ebf3"/>
+        </g>
+
+        <!-- STAGE 2: heat in the distillation tower -->
+        <g class="stage" data-stage="2">
+          <!-- tower -->
+          <rect x="170" y="100" width="60" height="140" fill="#cfd6e2" stroke="#1a4d8f" stroke-width="2"/>
+          <rect x="160" y="96" width="80" height="10" fill="#1a4d8f"/>
+          <!-- internal trays -->
+          <line x1="170" y1="130" x2="230" y2="130" stroke="#8a96ad" stroke-width="1.5"/>
+          <line x1="170" y1="160" x2="230" y2="160" stroke="#8a96ad" stroke-width="1.5"/>
+          <line x1="170" y1="190" x2="230" y2="190" stroke="#8a96ad" stroke-width="1.5"/>
+          <line x1="170" y1="220" x2="230" y2="220" stroke="#8a96ad" stroke-width="1.5"/>
+          <!-- flame at base -->
+          <g class="pulse">
+            <path d="M195 240 Q200 220 205 240 Q210 222 215 240 Z" fill="#e07a2f"/>
+            <path d="M198 240 Q200 228 202 240 Q206 230 210 240 Z" fill="#f5c842"/>
+          </g>
+          <!-- temperature label -->
+          <text x="200" y="92" font-size="10" font-family="sans-serif" fill="#1a4d8f" text-anchor="middle" font-weight="700">700&deg;F &mdash; very hot!</text>
+        </g>
+
+        <!-- STAGE 3: separates into products -->
+        <g class="stage" data-stage="3">
+          <rect x="170" y="100" width="60" height="140" fill="#cfd6e2" stroke="#1a4d8f" stroke-width="2"/>
+          <!-- pipes coming out -->
+          <line x1="230" y1="120" x2="290" y2="120" stroke="#1a4d8f" stroke-width="3"/>
+          <line x1="230" y1="150" x2="290" y2="150" stroke="#1a4d8f" stroke-width="3"/>
+          <line x1="230" y1="180" x2="290" y2="180" stroke="#1a4d8f" stroke-width="3"/>
+          <line x1="230" y1="210" x2="290" y2="210" stroke="#1a4d8f" stroke-width="3"/>
+          <!-- product labels -->
+          <circle cx="305" cy="120" r="8" fill="#5fb87a"/><text x="320" y="124" font-size="10" font-family="sans-serif" fill="#1a2b4a">Propane</text>
+          <circle cx="305" cy="150" r="8" fill="#e8b830"/><text x="320" y="154" font-size="10" font-family="sans-serif" fill="#1a2b4a">Gasoline</text>
+          <circle cx="305" cy="180" r="8" fill="#e07a2f"/><text x="320" y="184" font-size="10" font-family="sans-serif" fill="#1a2b4a">Jet fuel</text>
+          <circle cx="305" cy="210" r="8" fill="#5a3a1a"/><text x="320" y="214" font-size="10" font-family="sans-serif" fill="#1a2b4a">Asphalt</text>
+        </g>
+
+        <!-- STAGE 4: products go out into the world -->
+        <g class="stage" data-stage="4">
+          <!-- gas pump -->
+          <g transform="translate(40,180)">
+            <rect x="0" y="0" width="34" height="60" fill="#cf3a3a"/>
+            <rect x="6" y="8" width="22" height="14" fill="#fff"/>
+            <rect x="14" y="60" width="6" height="6" fill="#444"/>
+            <text x="17" y="78" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#1a2b4a">Gas pump</text>
+          </g>
+          <!-- plane -->
+          <g transform="translate(140,150)">
+            <path d="M0 10 L40 10 L48 5 L52 10 L70 10 L70 14 L52 14 L48 19 L40 14 L0 14 Z" fill="#1a4d8f"/>
+            <path d="M20 14 L26 24 L30 24 L26 14 Z" fill="#1a4d8f"/>
+            <text x="35" y="38" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#1a2b4a">Jet fuel</text>
+          </g>
+          <!-- house -->
+          <g transform="translate(240,180)">
+            <polygon points="0,20 30,0 60,20" fill="#e07a2f"/>
+            <rect x="5" y="20" width="50" height="30" fill="#f5c842"/>
+            <rect x="22" y="30" width="14" height="20" fill="#5a3a1a"/>
+            <text x="30" y="62" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#1a2b4a">Heat &amp; plastics</text>
+          </g>
+          <!-- road -->
+          <rect x="0" y="260" width="400" height="14" fill="#3a4a66"/>
+          <line x1="0" y1="267" x2="60" y2="267" stroke="#fff" stroke-width="2" stroke-dasharray="10 12"/>
+          <line x1="80" y1="267" x2="200" y2="267" stroke="#fff" stroke-width="2" stroke-dasharray="10 12"/>
+          <line x1="220" y1="267" x2="400" y2="267" stroke="#fff" stroke-width="2" stroke-dasharray="10 12"/>
+        </g>
+
+        <!-- STAGE 5: the people who run it -->
+        <g class="stage" data-stage="5">
+          <!-- skyline shadow -->
+          <g opacity=".3">
+            <rect x="60" y="180" width="20" height="60" fill="#1a4d8f"/>
+            <rect x="100" y="160" width="14" height="80" fill="#1a4d8f"/>
+            <rect x="130" y="190" width="22" height="50" fill="#1a4d8f"/>
+            <rect x="170" y="150" width="14" height="90" fill="#1a4d8f"/>
+            <rect x="200" y="180" width="20" height="60" fill="#1a4d8f"/>
+            <rect x="240" y="170" width="16" height="70" fill="#1a4d8f"/>
+            <rect x="280" y="200" width="22" height="40" fill="#1a4d8f"/>
+            <rect x="320" y="180" width="16" height="60" fill="#1a4d8f"/>
+          </g>
+          <!-- worker 1 -->
+          <g transform="translate(110,200)">
+            <circle cx="14" cy="14" r="10" fill="#f1c27d"/>
+            <path d="M2 14 Q14 0 26 14 L26 9 L2 9 Z" fill="#e8b830"/>
+            <rect x="6" y="24" width="16" height="22" fill="#3aa55a"/>
+            <text x="14" y="58" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#1a2b4a">Operator</text>
+          </g>
+          <!-- worker 2 -->
+          <g transform="translate(180,200)">
+            <circle cx="14" cy="14" r="10" fill="#c68642"/>
+            <path d="M2 14 Q14 0 26 14 L26 9 L2 9 Z" fill="#cf3a3a"/>
+            <rect x="6" y="24" width="16" height="22" fill="#1a4d8f"/>
+            <text x="14" y="58" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#1a2b4a">Engineer</text>
+          </g>
+          <!-- worker 3 -->
+          <g transform="translate(250,200)">
+            <circle cx="14" cy="14" r="10" fill="#8d5524"/>
+            <path d="M2 14 Q14 0 26 14 L26 9 L2 9 Z" fill="#1a4d8f"/>
+            <rect x="6" y="24" width="16" height="22" fill="#e07a2f"/>
+            <text x="14" y="58" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#1a2b4a">Safety tech</text>
+          </g>
+        </g>
+      </svg>
+      <div class="stage-label">Step <strong id="stage-current">1</strong> of <strong>5</strong></div>
+    </div>
+
+    <!-- Steps -->
+    <div class="steps" id="scroll-steps">
+      <article class="scroll-step" data-step="1">
+        <span class="num">STEP 01</span>
+        <h3>Oil starts as a thick black liquid called <em>crude oil</em>.</h3>
+        <p>Crude oil comes out of the ground in places like Texas and Mexico. Big ships and underground pipes bring it to Deer Park&rsquo;s docks along the Houston Ship Channel. By itself, crude oil isn&rsquo;t very useful &mdash; it&rsquo;s sticky, smelly, and full of different things mixed together.</p>
+      </article>
+      <article class="scroll-step" data-step="2">
+        <span class="num">STEP 02</span>
+        <h3>The refinery <em>heats</em> the oil to separate it.</h3>
+        <p>Inside a tall metal tower, the oil is heated to about 700&deg;F. That&rsquo;s seven times hotter than a really hot summer day! The heat turns the oil into a gas. As the gas rises and cools, different parts of it turn back into liquid at different heights.</p>
+      </article>
+      <article class="scroll-step" data-step="3">
+        <span class="num">STEP 03</span>
+        <h3>One barrel of oil makes <em>many</em> different products.</h3>
+        <p>The light stuff floats to the top &mdash; that becomes propane and gasoline. The middle becomes jet fuel and diesel. The heavy stuff at the bottom becomes things like asphalt for roads. The same crude oil also makes plastic, crayons, and even some medicines.</p>
+      </article>
+      <article class="scroll-step" data-step="4">
+        <span class="num">STEP 04</span>
+        <h3>Trucks, ships, and pipelines send it everywhere.</h3>
+        <p>From Deer Park, refined fuel travels to gas stations, airports, factories, and homes all over Texas and beyond. About one-third of all the gasoline in the United States is made along the Texas Gulf Coast.</p>
+      </article>
+      <article class="scroll-step" data-step="5">
+        <span class="num">STEP 05</span>
+        <h3>It takes <em>thousands of people</em> to keep it running safely.</h3>
+        <p>Operators watch the controls. Engineers design the equipment. Safety technicians check the air and the pipes. Maintenance crews fix things. Lots of Deer Park families have someone who works at one of the plants &mdash; and the city makes rules to keep everyone safe.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== MODULE 3: SHELTER-IN-PLACE CHECKLIST ============== -->
+<section id="shelter-module" class="module" aria-labelledby="shelter-h2">
+  <h2 id="shelter-h2"><span class="num">03</span>Be a Safety Superhero!</h2>
+  <p class="kicker">Sometimes the city asks everyone to <em>shelter in place</em> &mdash; that means stay inside until the all-clear. Here&rsquo;s your hero checklist. Tap each step to mark it done.</p>
+
+  <div class="shero-card">
+    <div class="shero-head">
+      <svg viewBox="0 0 64 64" role="img" aria-label="Safety shield with star"><title>Safety shield</title><path d="M32 4 L56 14 L56 32 C56 46 44 56 32 60 C20 56 8 46 8 32 L8 14 Z" fill="#1a4d8f" stroke="#fff" stroke-width="2"/><polygon points="32,18 36,28 47,29 39,36 41,47 32,41 23,47 25,36 17,29 28,28" fill="#f5c842"/></svg>
+      <div>
+        <h3>Your 6-Step Shelter-in-Place Plan</h3>
+        <p>Grown-ups call it &ldquo;sheltering in place.&rdquo; You can call it Safety Hero Mode.</p>
+      </div>
+    </div>
+
+    <ul class="checklist" id="checklist" role="list">
+      <li tabindex="0" role="checkbox" aria-checked="false">
+        <span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12 L10 17 L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="text">Go inside the nearest building.<span class="hint">Home, school, a store &mdash; any solid building works.</span></span>
+      </li>
+      <li tabindex="0" role="checkbox" aria-checked="false">
+        <span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12 L10 17 L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="text">Close all doors and windows.<span class="hint">A closed door keeps the inside air clean.</span></span>
+      </li>
+      <li tabindex="0" role="checkbox" aria-checked="false">
+        <span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12 L10 17 L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="text">Ask a grown-up to turn off the AC or fans.<span class="hint">This stops outside air from being pulled in.</span></span>
+      </li>
+      <li tabindex="0" role="checkbox" aria-checked="false">
+        <span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12 L10 17 L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="text">Bring pets inside too.<span class="hint">Dogs, cats, hamsters &mdash; everyone in the family.</span></span>
+      </li>
+      <li tabindex="0" role="checkbox" aria-checked="false">
+        <span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12 L10 17 L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="text">Listen to a radio, TV, or phone for updates.<span class="hint">In Deer Park, tune to local news or check the city&rsquo;s alerts.</span></span>
+      </li>
+      <li tabindex="0" role="checkbox" aria-checked="false">
+        <span class="box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12 L10 17 L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="text">Stay calm and wait for the all-clear signal.<span class="hint">Most shelter-in-place orders only last a little while.</span></span>
+      </li>
+    </ul>
+
+    <div class="shero-actions">
+      <div class="progress-text"><strong id="check-count">0</strong> of 6 steps complete</div>
+      <button class="btn" id="reset-checklist" type="button">Reset checklist</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============== MODULE 4: QUIZ ============== -->
+<section id="quiz-module" class="module" aria-labelledby="quiz-h2">
+  <h2 id="quiz-h2"><span class="num">04</span>Quick Quiz: 5 questions</h2>
+  <p class="kicker">No score keeping, no signing in. Just for fun. Earn your Deer Park Safety Star at the end!</p>
+
+  <div class="quiz-card">
+    <div class="quiz-progress" aria-hidden="true"><div class="bar" id="quiz-bar"></div></div>
+    <div id="quiz-stage"></div>
+  </div>
+</section>
+
+<!-- ============== MODULE 5: PRINTABLE ACTIVITY SHEET ============== -->
+<section id="activity-module" class="module" aria-labelledby="activity-h2">
+  <h2 id="activity-h2"><span class="num">05</span>Print &amp; Color Activity Sheet</h2>
+  <p class="kicker">For classrooms, library tables, and rainy-day kitchen tables. Press <strong>print</strong> below &mdash; the rest of the page disappears and just this sheet prints.</p>
+
+  <div class="activity-card">
+    <div class="activity-tip">
+      <strong>Teachers &amp; parents:</strong> the print version automatically hides the interactive sections. Use it as a 1-page handout. <button class="btn btn-primary" id="print-btn" type="button" style="margin-left:.6rem">Print activity sheet</button>
+    </div>
+
+    <div class="print-only" style="margin-bottom:1rem">
+      <h2 style="font-family:var(--serif);font-size:18pt;margin:0 0 .2rem">Deer Park Safety &amp; Air Quality Activity Sheet</h2>
+      <div style="font-size:10pt;color:#444">Name: _________________________ &nbsp; Grade: _____ &nbsp; Date: _____________</div>
+    </div>
+
+    <div class="activity-grid">
+
+      <!-- COLORING -->
+      <div class="activity-block coloring">
+        <h3>1. Color the Deer Park skyline</h3>
+        <p>Use crayons, colored pencils, or markers. Look for the air monitor!</p>
+        <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line drawing of a refinery skyline with smokestacks, storage tanks, a distillation tower, and an air quality monitor for coloring">
+          <title>Refinery skyline coloring page</title>
+          <!-- ground -->
+          <line x1="0" y1="240" x2="600" y2="240" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <!-- sun -->
+          <circle cx="80" cy="60" r="28" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <g stroke="#1a2b4a" stroke-width="2" class="fill-allowed" fill="none">
+            <line x1="80" y1="20" x2="80" y2="8"/>
+            <line x1="80" y1="100" x2="80" y2="112"/>
+            <line x1="40" y1="60" x2="28" y2="60"/>
+            <line x1="120" y1="60" x2="132" y2="60"/>
+            <line x1="52" y1="32" x2="44" y2="24"/>
+            <line x1="108" y1="32" x2="116" y2="24"/>
+            <line x1="52" y1="88" x2="44" y2="96"/>
+            <line x1="108" y1="88" x2="116" y2="96"/>
+          </g>
+          <!-- cloud -->
+          <path d="M150 70 q-18 0 -18 16 q-12 0 -12 12 q0 12 14 12 l50 0 q14 0 14 -12 q0 -10 -10 -12 q-2 -16 -22 -16 z" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <!-- left tank -->
+          <ellipse cx="160" cy="240" rx="50" ry="6" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <line x1="110" y1="240" x2="110" y2="190" stroke="#1a2b4a" stroke-width="2"/>
+          <line x1="210" y1="240" x2="210" y2="190" stroke="#1a2b4a" stroke-width="2"/>
+          <ellipse cx="160" cy="190" rx="50" ry="14" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <!-- distillation tower -->
+          <rect x="260" y="120" width="60" height="120" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <line x1="260" y1="150" x2="320" y2="150" stroke="#1a2b4a" stroke-width="1.5"/>
+          <line x1="260" y1="180" x2="320" y2="180" stroke="#1a2b4a" stroke-width="1.5"/>
+          <line x1="260" y1="210" x2="320" y2="210" stroke="#1a2b4a" stroke-width="1.5"/>
+          <rect x="252" y="116" width="76" height="6" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <!-- smokestack -->
+          <polygon points="360,240 372,140 388,140 400,240" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <line x1="372" y1="160" x2="388" y2="160" stroke="#1a2b4a" stroke-width="1.5"/>
+          <!-- pipe rack -->
+          <line x1="220" y1="240" x2="220" y2="200" stroke="#1a2b4a" stroke-width="2"/>
+          <line x1="250" y1="240" x2="250" y2="200" stroke="#1a2b4a" stroke-width="2"/>
+          <line x1="220" y1="200" x2="260" y2="200" stroke="#1a2b4a" stroke-width="2"/>
+          <line x1="220" y1="210" x2="260" y2="210" stroke="#1a2b4a" stroke-width="2"/>
+          <line x1="220" y1="220" x2="260" y2="220" stroke="#1a2b4a" stroke-width="2"/>
+          <!-- right tank -->
+          <ellipse cx="450" cy="240" rx="40" ry="6" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <line x1="410" y1="240" x2="410" y2="200" stroke="#1a2b4a" stroke-width="2"/>
+          <line x1="490" y1="240" x2="490" y2="200" stroke="#1a2b4a" stroke-width="2"/>
+          <ellipse cx="450" cy="200" rx="40" ry="10" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+          <!-- air monitor -->
+          <g>
+            <line x1="540" y1="240" x2="540" y2="170" stroke="#1a2b4a" stroke-width="2"/>
+            <rect x="525" y="155" width="30" height="20" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+            <circle cx="540" cy="148" r="5" fill="none" stroke="#1a2b4a" stroke-width="2" class="fill-allowed"/>
+            <line x1="535" y1="143" x2="528" y2="138" stroke="#1a2b4a" stroke-width="1.5"/>
+            <line x1="545" y1="143" x2="552" y2="138" stroke="#1a2b4a" stroke-width="1.5"/>
+            <text x="540" y="265" font-size="9" font-family="serif" text-anchor="middle" fill="#1a2b4a">Air monitor</text>
+          </g>
+          <!-- birds -->
+          <path d="M220 70 q6 -8 12 0 q6 -8 12 0" fill="none" stroke="#1a2b4a" stroke-width="1.5"/>
+          <path d="M270 50 q5 -6 10 0 q5 -6 10 0" fill="none" stroke="#1a2b4a" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <!-- WORD SEARCH + FILL-IN -->
+      <div>
+        <div class="activity-block">
+          <h3>2. Word search</h3>
+          <p>Find these 8 words. They go across &rarr; or down &darr;.</p>
+          <div class="wordsearch" id="wordsearch" role="grid" aria-label="Word search puzzle"></div>
+          <div class="wordlist">
+            <span>Air</span><span>Safe</span><span>Inside</span><span>Radio</span>
+            <span>Clean</span><span>Green</span><span>Oxygen</span><span>Help</span>
+          </div>
+        </div>
+
+        <div class="activity-block" style="margin-top:1rem">
+          <h3>3. Fill in the blanks</h3>
+          <div class="fillin">
+            <div class="row"><span>1.</span><span>The Air Quality Index, or A___, tells us if the air is clean.</span></div>
+            <div class="row"><span>2.</span><span>If the stoplight is g_____, it&rsquo;s a great day to play outside.</span></div>
+            <div class="row"><span>3.</span><span>During shelter in place, close all doors and w_______.</span></div>
+            <div class="row"><span>4.</span><span>A r_______ takes crude oil and turns it into gasoline.</span></div>
+            <div class="row"><span>5.</span><span>The grown-up who watches the controls is called an o_______.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="print-only" style="margin-top:1rem;font-size:9pt;color:#444;text-align:center">
+      Deer Park Report &middot; pemexdeerpark.com/kids &middot; Free for classroom &amp; family use.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="wrap">
+    <div>
+      <h4>About this page</h4>
+      <p>This is a free educational page for Deer Park, Texas families and classrooms. Built by <a href="/">Deer Park Report</a>, an independent community publication. Not affiliated with Pemex or any subsidiary.</p>
+      <p style="font-size:.85rem;color:var(--muted)">Reviewed by parents and teachers. Suggestions welcome at <a href="mailto:info@pemexdeerpark.com">info@pemexdeerpark.com</a>.</p>
+    </div>
+    <div class="links-col">
+      <h4>For families</h4>
+      <ul>
+        <li><a href="/">Home &amp; live air quality</a></li>
+        <li><a href="https://www.airnow.gov/?city=Deer%20Park&amp;state=TX&amp;country=USA" rel="noopener">EPA AirNow &mdash; Deer Park</a></li>
+        <li><a href="https://www.deerparktx.gov/" rel="noopener">City of Deer Park</a></li>
+      </ul>
+    </div>
+    <div class="links-col">
+      <h4>For teachers</h4>
+      <ul>
+        <li><a href="#activity-module">Printable activity sheet</a></li>
+        <li><a href="https://www.epa.gov/students" rel="noopener">EPA Student Resources</a></li>
+        <li><a href="mailto:info@pemexdeerpark.com?subject=Classroom%20use">Request a classroom version</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fineprint">
+    <em>pemexdeerpark.com</em> is privately owned and independent. This page is a community resource and does not provide medical, legal, or emergency advice. In an emergency, call 911. For shelter-in-place advisories, follow guidance from the City of Deer Park and Harris County emergency services.
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   1) AQI STOPLIGHT
+   --------------------------------------------------------- */
+(function(){
+  // Public hook: set window.setDeerParkAQI(value) from the parent site's data fetch.
+  // Or set the 'data-aqi' attribute on <body> and call window.setDeerParkAQI() with no args.
+  const valEl   = document.querySelector('[data-aqi-value]');
+  const bandEl  = document.querySelector('[data-aqi-band]');
+  const badgeEl = document.querySelector('[data-aqi-badge]');
+  const msgEl   = document.querySelector('[data-aqi-message]');
+  const lights  = document.querySelectorAll('#stoplight-row .light');
+
+  const BANDS = [
+    { max:50,  key:'good',          label:'Good',                            color:'#3aa55a',
+      msg:'The air is clean today. Go play outside as long as you want!' },
+    { max:100, key:'moderate',      label:'Moderate',                        color:'#e8b830',
+      msg:'The air is okay. Most kids can play outside normally. If you have asthma, take it a little easier.' },
+    { max:150, key:'usg',           label:'Unhealthy for Sensitive Groups',  color:'#e07a2f',
+      msg:'Take it easy outside. Kids, older folks, and anyone with asthma should slow down or take more breaks.' },
+    { max:200, key:'unhealthy',     label:'Unhealthy',                       color:'#cf3a3a',
+      msg:'Stay inside if you can. The air is bothering people. Skip outdoor PE and recess if your school says so.' },
+    { max:300, key:'very-unhealthy',label:'Very Unhealthy',                  color:'#7a3aa5',
+      msg:'Stay indoors. Keep windows closed. This is a good day for indoor games and reading.' },
+    { max:500, key:'hazardous',     label:'Hazardous',                       color:'#5a1a1a',
+      msg:'Stay inside. Listen to local news. Grown-ups will know when it&rsquo;s safe to go out.' }
+  ];
+
+  function bandFor(v){ for (const b of BANDS) if (v <= b.max) return b; return BANDS[BANDS.length-1]; }
+  function highlight(key){
+    lights.forEach(l => {
+      const isActive = l.dataset.band === key
+        || (key === 'very-unhealthy' && l.dataset.band === 'unhealthy')
+        || (key === 'hazardous' && l.dataset.band === 'unhealthy');
+      l.classList.toggle('on', isActive);
+    });
+  }
+
+  window.setDeerParkAQI = function(value){
+    if (value == null) value = parseInt(document.body.dataset.aqi || '', 10);
+    if (!isFinite(value)) return; // leave loading state
+    const b = bandFor(value);
+    valEl.firstChild.nodeValue = String(value);
+    bandEl.textContent = ' ' + b.label;
+    badgeEl.textContent = b.label;
+    badgeEl.style.background = b.color;
+    msgEl.innerHTML = b.msg;
+    highlight(b.key);
+  };
+
+  // Demo default so the page never looks broken before being wired up.
+  // Production: replace this with the parent site's AQI feed.
+  window.setDeerParkAQI(42);
+})();
+
+/* =========================================================
+   2) REFINERY SCROLLY
+   --------------------------------------------------------- */
+(function(){
+  const steps = document.querySelectorAll('.scroll-step');
+  const stages = document.querySelectorAll('.refsvg .stage');
+  const stageLabel = document.getElementById('stage-current');
+  function show(n){
+    stages.forEach(s => s.classList.toggle('show', s.dataset.stage === String(n)));
+    steps.forEach(s => s.classList.toggle('active', s.dataset.step === String(n)));
+    if (stageLabel) stageLabel.textContent = n;
+  }
+  show(1);
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting) show(en.target.dataset.step);
+      });
+    }, { rootMargin:'-40% 0px -50% 0px', threshold:0 });
+    steps.forEach(s => io.observe(s));
+  }
+})();
+
+/* =========================================================
+   3) CHECKLIST
+   --------------------------------------------------------- */
+(function(){
+  const list  = document.getElementById('checklist');
+  const items = list.querySelectorAll('li');
+  const count = document.getElementById('check-count');
+  const reset = document.getElementById('reset-checklist');
+  function update(){
+    let done = 0;
+    items.forEach(li => { if (li.classList.contains('done')) done++; });
+    count.textContent = done;
+  }
+  function toggle(li){
+    li.classList.toggle('done');
+    li.setAttribute('aria-checked', li.classList.contains('done'));
+    update();
+  }
+  items.forEach(li => {
+    li.addEventListener('click', () => toggle(li));
+    li.addEventListener('keydown', e => {
+      if (e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); toggle(li); }
+    });
+  });
+  reset.addEventListener('click', () => {
+    items.forEach(li => { li.classList.remove('done'); li.setAttribute('aria-checked','false'); });
+    update();
+  });
+})();
+
+/* =========================================================
+   4) QUIZ
+   --------------------------------------------------------- */
+(function(){
+  const QUESTIONS = [
+    { q:"If today's AQI is 35, what color is the air-quality stoplight?",
+      options:[
+        {t:"Green &mdash; great day to play outside!", correct:true},
+        {t:"Yellow &mdash; take it easy"},
+        {t:"Orange &mdash; stay indoors"},
+        {t:"Purple &mdash; emergency"}
+      ],
+      explain:"AQI from 0 to 50 is the Good range, shown in green. The lower the number, the cleaner the air."
+    },
+    { q:"What does a refinery do with crude oil?",
+      options:[
+        {t:"Freezes it solid"},
+        {t:"Turns it into gold"},
+        {t:"Heats it up to separate it into things like gasoline, jet fuel, and asphalt", correct:true},
+        {t:"Sends it back into the ground"}
+      ],
+      explain:"Refineries heat crude oil so it turns into gas, then catch the different products as they cool back down at different heights in a tall tower."
+    },
+    { q:"You hear a shelter-in-place advisory on the news. What's the FIRST thing to do?",
+      options:[
+        {t:"Run outside to see what&rsquo;s happening"},
+        {t:"Go inside the nearest building", correct:true},
+        {t:"Open all the windows"},
+        {t:"Go for a bike ride"}
+      ],
+      explain:"Inside is safest. Get into a building &mdash; home, school, store &mdash; before doing anything else."
+    },
+    { q:"During a shelter-in-place, why do grown-ups turn off the AC?",
+      options:[
+        {t:"To save electricity"},
+        {t:"AC blows snow"},
+        {t:"It pulls outside air into the building, and we want to keep that out for a little while", correct:true},
+        {t:"To make the house warmer"}
+      ],
+      explain:"Air conditioners and big fans can suck outside air into a building. Turning them off keeps the inside air cleaner until the all-clear."
+    },
+    { q:"Other than gasoline, what is something else made from crude oil?",
+      options:[
+        {t:"Plastic toys and water bottles", correct:true},
+        {t:"Apples"},
+        {t:"Cotton t-shirts"},
+        {t:"Wooden chairs"}
+      ],
+      explain:"Crude oil is used to make plastics, crayons, some clothes (polyester), tires, and even ingredients for some medicines."
+    }
+  ];
+
+  const stage = document.getElementById('quiz-stage');
+  const bar   = document.getElementById('quiz-bar');
+  let i = 0, score = 0;
+
+  function renderQ(){
+    const q = QUESTIONS[i];
+    bar.style.width = ((i)/QUESTIONS.length*100) + '%';
+    stage.innerHTML = `
+      <div class="quiz-step active">
+        <div class="quiz-num">Question ${i+1} of ${QUESTIONS.length}</div>
+        <h3 class="quiz-q">${q.q}</h3>
+        <div class="quiz-options" role="radiogroup" aria-label="Answer choices"></div>
+        <div class="quiz-explain"></div>
+        <button class="btn btn-primary quiz-next" type="button">Next question &rarr;</button>
+      </div>`;
+    const opts = stage.querySelector('.quiz-options');
+    const exp  = stage.querySelector('.quiz-explain');
+    const next = stage.querySelector('.quiz-next');
+    q.options.forEach(o => {
+      const b = document.createElement('button');
+      b.className = 'quiz-option';
+      b.type = 'button';
+      b.innerHTML = o.t;
+      b.addEventListener('click', () => {
+        if (b.disabled) return;
+        opts.querySelectorAll('button').forEach(x => x.disabled = true);
+        if (o.correct){ b.classList.add('correct'); score++; }
+        else {
+          b.classList.add('wrong');
+          opts.querySelectorAll('button').forEach(x => {
+            const idx = Array.from(opts.children).indexOf(x);
+            if (q.options[idx].correct) x.classList.add('correct');
+          });
+        }
+        exp.innerHTML = '<strong>Why:</strong> ' + q.explain;
+        exp.classList.add('show');
+        next.classList.add('show');
+        next.focus();
+      });
+      opts.appendChild(b);
+    });
+    next.addEventListener('click', () => {
+      i++;
+      if (i >= QUESTIONS.length) renderResult();
+      else renderQ();
+    });
+  }
+
+  function renderResult(){
+    bar.style.width = '100%';
+    const pct = Math.round(score/QUESTIONS.length*100);
+    const headline =
+      score >= 4 ? "Safety Star earned!" :
+      score >= 2 ? "Nice work!" :
+                   "Good try!";
+    const sub =
+      score >= 4 ? "You really know your stuff." :
+      score >= 2 ? "You&rsquo;ve got the basics down." :
+                   "Read through the page once more &mdash; you&rsquo;ll get it.";
+
+    stage.innerHTML = `
+      <div class="quiz-result">
+        <svg class="badge" viewBox="0 0 200 200" role="img" aria-label="Deer Park Safety Star badge">
+          <title>Deer Park Safety Star badge</title>
+          <defs>
+            <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stop-color="#fff8e1"/>
+              <stop offset="100%" stop-color="#f5c842"/>
+            </radialGradient>
+          </defs>
+          <circle cx="100" cy="100" r="92" fill="url(#bg)" stroke="#1a4d8f" stroke-width="4"/>
+          <circle cx="100" cy="100" r="78" fill="none" stroke="#1a4d8f" stroke-width="2" stroke-dasharray="4 4"/>
+          <polygon points="100,40 116,82 162,86 126,114 138,158 100,134 62,158 74,114 38,86 84,82" fill="#1a4d8f"/>
+          <text x="100" y="180" font-family="serif" font-size="13" text-anchor="middle" fill="#1a2b4a" font-weight="700">DEER PARK SAFETY STAR</text>
+        </svg>
+        <h3>${headline}</h3>
+        <p class="score">You got <strong>${score} out of ${QUESTIONS.length}</strong> &middot; ${pct}%</p>
+        <button class="btn restart" type="button" id="quiz-restart">Try again</button>
+      </div>`;
+    document.getElementById('quiz-restart').addEventListener('click', () => {
+      i = 0; score = 0; renderQ();
+    });
+  }
+
+  renderQ();
+})();
+
+/* =========================================================
+   5) WORD SEARCH (placed-words puzzle, kid-easy)
+   --------------------------------------------------------- */
+(function(){
+  const grid = document.getElementById('wordsearch');
+  if (!grid) return;
+  const SIZE = 10;
+  const WORDS = [
+    {w:"AIR",   r:0, c:1, dir:"H"},
+    {w:"SAFE",  r:1, c:5, dir:"H"},
+    {w:"INSIDE",r:3, c:0, dir:"H"},
+    {w:"RADIO", r:5, c:4, dir:"H"},
+    {w:"CLEAN", r:7, c:1, dir:"H"},
+    {w:"GREEN", r:2, c:8, dir:"V"},
+    {w:"OXYGEN",r:1, c:0, dir:"V"},
+    {w:"HELP",  r:5, c:9, dir:"V"}
+  ];
+  const board = Array.from({length:SIZE}, () => Array(SIZE).fill(null));
+  WORDS.forEach(({w,r,c,dir}) => {
+    for (let k=0;k<w.length;k++){
+      const rr = r + (dir==="V"?k:0);
+      const cc = c + (dir==="H"?k:0);
+      if (rr<SIZE && cc<SIZE) board[rr][cc] = w[k];
+    }
+  });
+  const filler = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  for (let r=0;r<SIZE;r++) for (let c=0;c<SIZE;c++){
+    if (!board[r][c]) board[r][c] = filler[Math.floor(Math.random()*filler.length)];
+    const cell = document.createElement('span');
+    cell.textContent = board[r][c];
+    grid.appendChild(cell);
+  }
+})();
+
+/* =========================================================
+   6) PRINT BUTTON
+   --------------------------------------------------------- */
+document.getElementById('print-btn')?.addEventListener('click', () => window.print());
+</script>
+</body>
+</html>
