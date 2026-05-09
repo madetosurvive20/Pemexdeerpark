@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Pemex Deer Park Refinery — Operations, News & Community Hub | Deer Park Report</title>
+<meta name="description" content="Independent community hub for Deer Park, Texas — live air quality, refinery news, local jobs, and Ship Channel vessel activity for the Pemex Deer Park refinery corridor.">
+<meta name="keywords" content="Pemex Deer Park, Deer Park Texas, Deer Park refinery news, Deer Park air quality, Deer Park jobs, Houston Ship Channel, Pemex Deer Park operations, PMX Deer Park">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Deer Park Report">
+<link rel="canonical" href="https://www.pemexdeerpark.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pemex Deer Park — Community Hub & Refinery Intelligence">
+<meta property="og:description" content="Live air quality, refinery news, local jobs and Ship Channel activity for the Deer Park, Texas community.">
+<meta property="og:url" content="https://www.pemexdeerpark.com/">
+<meta property="og:site_name" content="Deer Park Report">
+<meta property="og:image" content="https://images.pexels.com/photos/10407689/pexels-photo-10407689.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pemex Deer Park — Community Hub & Refinery Intelligence">
+<meta name="twitter:image" content="https://images.pexels.com/photos/10407689/pexels-photo-10407689.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "@id":"https://www.pemexdeerpark.com/#website",
+  "url":"https://www.pemexdeerpark.com/",
+  "name":"Deer Park Report",
+  "description":"Independent community hub and energy intelligence site covering the Pemex Deer Park refinery corridor in Deer Park, Texas.",
+  "publisher":{"@type":"Organization","name":"Deer Park Report","url":"https://www.pemexdeerpark.com/"}
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700;1,9..144,900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#080e1a;--navy2:#0d1625;--navy3:#111e30;
+  --amber:#f5a800;--amber2:#e09600;--amber3:#ffc235;
+  --cream:#f0ebe0;--ink:#080e1a;
+  --mid:rgba(240,235,224,0.55);--dim:rgba(240,235,224,0.28);
+  --rule:rgba(240,235,224,0.1);--rule2:rgba(240,235,224,0.06);
+  --green:#4ade80;--red:#f87171;--blue:#93c5fd;
+  --mono:'IBM Plex Mono',monospace;
+  --sans:'Space Grotesk',sans-serif;
+  --serif:'Fraunces',Georgia,serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--navy);color:var(--cream);overflow-x:hidden;line-height:1.6}
+a{color:inherit;text-decoration:none}
+
+/* TICKER */
+.ticker{background:var(--amber);height:28px;overflow:hidden;display:flex;align-items:center}
+.ticker-lbl{font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;background:var(--ink);color:var(--amber);padding:0 1rem;height:100%;display:flex;align-items:center;flex-shrink:0;white-space:nowrap}
+.ticker-scroll{overflow:hidden;flex:1}
+.ticker-track{display:flex;animation:tkr 55s linear infinite;white-space:nowrap}
+@keyframes tkr{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ti{font-family:var(--mono);font-size:.6rem;color:var(--ink);padding:0 2rem;display:flex;align-items:center;gap:.4rem;height:28px}
+.ti .up{color:#0a4a1a;font-weight:500}.ti .dn{color:#7a1010;font-weight:500}
+.ti-sep{color:rgba(8,14,26,.3)}
+
+/* SPLIT LAYOUT */
+.split{display:grid;grid-template-columns:1fr 380px;min-height:100vh}
+.left{background:var(--navy);border-right:1px solid var(--rule);display:flex;flex-direction:column}
+
+/* LOGO BAR */
+.logo-bar{padding:1.5rem 2.5rem 1.25rem;border-bottom:1px solid var(--rule);display:flex;align-items:flex-end;justify-content:space-between}
+.pub-name{font-family:var(--serif);font-weight:900;font-size:1.9rem;line-height:1;letter-spacing:-.03em;color:var(--cream)}
+.pub-name em{font-style:italic;color:var(--amber)}
+.pub-meta{font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:right;line-height:1.8}
+
+/* NAV */
+.left-nav{display:flex;border-bottom:1px solid var(--rule);overflow-x:auto;scrollbar-width:none}
+.left-nav::-webkit-scrollbar{display:none}
+.ln{font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:.65rem 1.1rem;color:var(--dim);cursor:pointer;border-bottom:2px solid transparent;transition:color .2s,border-color .2s;white-space:nowrap;display:block}
+.ln:hover{color:var(--cream)}
+.ln.active{color:var(--amber);border-bottom-color:var(--amber)}
+
+/* CONTENT */
+.left-content{flex:1;overflow-y:auto}
+.img-banner{width:100%;height:220px;object-fit:cover;display:block;border-bottom:1px solid var(--rule);filter:brightness(.75) saturate(.85)}
+.pad{padding:2rem 2.5rem}
+
+/* SECTION DIVIDERS */
+.sec-div{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-top:.25rem}
+.sec-div-label{font-family:var(--mono);font-size:.58rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);white-space:nowrap;display:flex;align-items:center;gap:.5rem}
+.sec-div-rule{flex:1;height:1px;background:var(--rule)}
+.sec-div-live{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 2s ease infinite;flex-shrink:0}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+
+/* HERO INTRO */
+.hero-intro{margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
+.hero-intro h1{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,3.5vw,2.4rem);line-height:1.08;letter-spacing:-.02em;color:var(--cream);margin-bottom:.75rem}
+.hero-intro h1 em{font-style:italic;color:var(--amber3)}
+.hero-intro p{font-size:.95rem;font-weight:300;color:var(--mid);line-height:1.8;max-width:560px}
+
+/* QUICK STATS ROW */
+.quick-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border-radius:4px;overflow:hidden;margin-bottom:2rem}
+.qs{background:var(--navy2);padding:1rem 1.25rem;transition:background .2s}
+.qs:hover{background:var(--navy3)}
+.qs-val{font-family:var(--serif);font-weight:900;font-size:1.5rem;line-height:1;margin-bottom:.2rem}
+.qs-val.g{color:var(--green)}.qs-val.a{color:var(--amber)}.qs-val.b{color:var(--blue)}.qs-val.r{color:var(--red)}
+.qs-lbl{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+
+/* AQI CARDS */
+.aqi-card{background:var(--navy2);padding:1.25rem 1.5rem;transition:background .2s}
+.aqi-card:hover{background:var(--navy3)}
+.aqi-card-val{font-family:var(--serif);font-weight:900;font-size:2.2rem;line-height:1;color:var(--cream);margin-bottom:.2rem}
+.aqi-card-param{font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.3rem}
+.aqi-card-cat{font-family:var(--mono);font-size:.65rem;font-weight:500;margin-bottom:.6rem}
+.aqi-card-bar{height:4px;background:var(--rule);border-radius:2px;overflow:hidden}
+.aqi-card-fill{height:100%;border-radius:2px;transition:width 1.2s ease;width:0}
+
+/* AIR QUALITY */
+.aqi-section{margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--rule)}
+
+/* NEWS FEED */
+.news-section{margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--rule)}
+.news-feed{display:flex;flex-direction:column;gap:0}
+.news-card{padding:1rem 0;border-bottom:1px solid var(--rule2);display:grid;grid-template-columns:auto 1fr;gap:1rem;cursor:pointer;transition:background .15s}
+.news-card:last-child{border:none}
+.news-card:hover{margin:0 -2.5rem;padding-left:2.5rem;padding-right:2.5rem;background:var(--rule2)}
+.nc-num{font-family:var(--serif);font-weight:900;font-style:italic;font-size:1.8rem;line-height:1;color:rgba(245,168,0,.2);width:2.2rem;text-align:right;padding-top:.1rem;flex-shrink:0}
+.nc-source{font-family:var(--mono);font-size:.55rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.25rem;display:flex;align-items:center;gap:.4rem}
+.nc-title{font-family:var(--serif);font-weight:700;font-size:.97rem;line-height:1.3;color:var(--cream);margin-bottom:.3rem;letter-spacing:-.01em}
+.nc-date{font-family:var(--mono);font-size:.55rem;color:var(--dim);letter-spacing:.06em}
+.nc-loading{font-family:var(--mono);font-size:.75rem;color:var(--dim);padding:2rem;text-align:center;letter-spacing:.08em}
+.nc-error{font-family:var(--mono);font-size:.7rem;color:var(--dim);padding:1.5rem;text-align:center;background:var(--navy2);border-radius:4px;border:1px solid var(--rule)}
+.news-more-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(245,168,0,.3);padding:.5em 1.1em;border-radius:2px;margin-top:1rem;transition:background .2s;cursor:pointer;background:none}
+.news-more-btn:hover{background:rgba(245,168,0,.07)}
+
+/* JOBS */
+.jobs-section{margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--rule)}
+.jobs-intro{font-size:.88rem;color:var(--mid);line-height:1.75;margin-bottom:1.25rem;font-weight:300}
+.job-links{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.25rem}
+.job-link{background:var(--navy2);border:1px solid var(--rule);border-radius:4px;padding:1.1rem 1.25rem;display:flex;flex-direction:column;gap:.3rem;cursor:pointer;transition:background .2s,border-color .2s;text-decoration:none}
+.job-link:hover{background:var(--navy3);border-color:rgba(245,168,0,.3)}
+.jl-company{font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
+.jl-role{font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--cream)}
+.jl-detail{font-family:var(--mono);font-size:.6rem;color:var(--dim)}
+.jl-arrow{font-family:var(--mono);font-size:.6rem;color:var(--amber);margin-top:.25rem}
+.jobs-search-links{display:flex;flex-wrap:wrap;gap:.6rem}
+.jsl{font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.45em 1em;border:1px solid var(--rule);border-radius:2px;color:var(--dim);transition:all .2s;cursor:pointer}
+.jsl:hover{color:var(--amber);border-color:rgba(245,168,0,.4)}
+
+/* VESSEL TRACKER */
+.vessel-section{margin-bottom:2rem}
+.vessel-intro{font-size:.88rem;color:var(--mid);line-height:1.75;margin-bottom:1.25rem;font-weight:300}
+.vessel-board{background:var(--navy2);border:1px solid var(--rule);border-radius:4px;overflow:hidden;margin-bottom:1rem}
+.vb-head{background:var(--navy3);padding:.6rem 1.25rem;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:.5rem;border-bottom:1px solid var(--rule)}
+.vb-head span{font-family:var(--mono);font-size:.55rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.vb-row{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:.5rem;padding:.65rem 1.25rem;border-bottom:1px solid var(--rule2);transition:background .15s;align-items:center}
+.vb-row:last-child{border:none}
+.vb-row:hover{background:var(--navy3)}
+.vb-name{font-family:var(--sans);font-weight:600;font-size:.75rem;color:var(--cream)}
+.vb-type{font-family:var(--mono);font-size:.55rem;color:var(--dim)}
+.vb-val{font-family:var(--mono);font-size:.62rem;color:var(--mid)}
+.vbadge{font-family:var(--mono);font-size:.52rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:.18em .55em;border-radius:2px}
+.vbadge.in{background:rgba(74,222,128,.12);color:var(--green)}
+.vbadge.ex{background:rgba(245,168,0,.12);color:var(--amber)}
+.vbadge.dp{background:rgba(96,165,250,.1);color:var(--blue)}
+.vessel-live-link{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(245,168,0,.3);padding:.45em 1em;border-radius:2px;transition:background .2s}
+.vessel-live-link:hover{background:rgba(245,168,0,.07)}
+
+/* ABOUT FOOTER STRIP */
+.about-strip{background:var(--navy2);border-top:1px solid var(--rule);padding:1.25rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.as-text{font-family:var(--mono);font-size:.58rem;color:var(--dim);line-height:1.6}
+.as-text a{color:var(--amber);text-decoration:underline}
+
+/* LEFT FOOTER */
+.left-footer{padding:1rem 2.5rem;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
+.lf-brand{font-family:var(--serif);font-weight:900;font-style:italic;font-size:1rem;color:var(--amber)}
+.lf-copy{font-family:var(--mono);font-size:.55rem;color:var(--dim)}
+.lf-links{display:flex;gap:1rem}
+.lf-links a{font-family:var(--mono);font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);transition:color .2s}
+.lf-links a:hover{color:var(--cream)}
+
+/* RIGHT PANEL */
+.right{background:var(--amber);position:relative}
+.right-sticky{position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;padding:1.5rem;gap:0;scrollbar-width:none}
+.right-sticky::-webkit-scrollbar{display:none}
+.rp-head{padding-bottom:1.1rem;border-bottom:2px solid rgba(8,14,26,.15);margin-bottom:1.1rem}
+.rp-label{font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(8,14,26,.5);margin-bottom:.2rem}
+.rp-title{font-family:var(--serif);font-weight:900;font-size:1.05rem;line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
+.rp-block{margin-bottom:1.1rem;padding-bottom:1.1rem;border-bottom:1px solid rgba(8,14,26,.12)}
+.rp-block:last-child{border:none;margin-bottom:0}
+.rp-block-title{font-family:var(--mono);font-size:.56rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(8,14,26,.45);margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+.rp-block-title::after{content:'';flex:1;height:1px;background:rgba(8,14,26,.12)}
+.mkt-row{display:flex;justify-content:space-between;align-items:center;padding:.4rem 0;border-bottom:1px solid rgba(8,14,26,.08);font-family:var(--mono);font-size:.65rem}
+.mkt-row:last-child{border:none}
+.mkt-row .ml{color:rgba(8,14,26,.6)}.mkt-row .mv{font-weight:500;color:var(--ink)}
+.mkt-row .mc{font-size:.58rem}
+.mkt-row .mc.up{color:#0a4a1a}.mkt-row .mc.dn{color:#7a1010}
+.kpi-tiles{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.kt{background:rgba(8,14,26,.07);padding:.85rem;border-radius:3px;transition:background .2s}
+.kt:hover{background:rgba(8,14,26,.12)}
+.kt-lbl{font-family:var(--mono);font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(8,14,26,.45);margin-bottom:.3rem}
+.kt-val{font-family:var(--serif);font-weight:900;font-size:1.35rem;line-height:1;color:var(--ink);margin-bottom:.15rem}
+.kt-sub{font-family:var(--mono);font-size:.52rem;color:rgba(8,14,26,.45)}
+.kt-sub .good{color:#0a4a1a}
+.unit-mini{display:flex;flex-direction:column}
+.um-row{display:flex;align-items:center;gap:.6rem;padding:.42rem 0;border-bottom:1px solid rgba(8,14,26,.08)}
+.um-row:last-child{border:none}
+.um-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.um-dot.on{background:#0a4a1a;animation:blink 2.5s ease infinite}
+.um-dot.rd{background:#7a5500}.um-dot.mt{background:#1a3a6b}
+.um-name{font-family:var(--mono);font-size:.62rem;color:var(--ink);flex:1;font-weight:500}
+.um-pct{font-family:var(--mono);font-size:.6rem;color:rgba(8,14,26,.55)}
+.rp-nav{display:flex;flex-direction:column;gap:.35rem}
+.rp-nav-link{display:flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(8,14,26,.5);padding:.5rem .75rem;background:rgba(8,14,26,.05);border-radius:3px;transition:background .2s}
+.rp-nav-link:hover{background:rgba(8,14,26,.12);color:var(--ink)}
+.domain-note{background:rgba(8,14,26,.07);border-radius:3px;padding:.85rem;margin-top:auto}
+.dn-lbl{font-family:var(--mono);font-size:.52rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(8,14,26,.4);margin-bottom:.35rem}
+.dn-text{font-family:var(--mono);font-size:.6rem;color:rgba(8,14,26,.55);line-height:1.6}
+.dn-text a{color:var(--ink);text-decoration:underline}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.reveal.on{opacity:1;transform:none}
+.reveal:nth-child(2){transition-delay:.07s}
+.reveal:nth-child(3){transition-delay:.14s}
+.reveal:nth-child(4){transition-delay:.21s}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .split{grid-template-columns:1fr}
+  .right{display:none}
+  .aqi-cards-grid{grid-template-columns:1fr 1fr}
+  .job-links{grid-template-columns:1fr}
+  .vb-head,.vb-row{grid-template-columns:1.5fr 1fr 1fr}
+}
+@media(max-width:600px){
+  .logo-bar{padding:1.25rem;flex-direction:column;align-items:flex-start;gap:.35rem}
+  .pub-name{font-size:1.5rem}
+  .pad{padding:1.5rem 1.25rem}
+  .news-card:hover{margin:0 -1.25rem;padding-left:1.25rem;padding-right:1.25rem}
+  .quick-stats{grid-template-columns:1fr 1fr}
+  .img-banner{height:170px}
+  .left-footer,.about-strip{padding-left:1.25rem;padding-right:1.25rem}
+  .vb-head,.vb-row{grid-template-columns:1.5fr 1fr}
+  .vb-head span:nth-child(3),.vb-row .vb-val:nth-child(3){display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-lbl">Live</div>
+  <div class="ticker-scroll">
+    <div class="ticker-track">
+      <span class="ti">WTI Crude <span class="up">$78.42 ▲1.2%</span></span><span class="ti-sep">·</span>
+      <span class="ti">Brent <span class="up">$82.17 ▲0.9%</span></span><span class="ti-sep">·</span>
+      <span class="ti">GC ULSD <span class="dn">$2.419 ▼0.4%</span></span><span class="ti-sep">·</span>
+      <span class="ti">TX Refinery Utilization <span class="up">91.3%</span></span><span class="ti-sep">·</span>
+      <span class="ti">Houston Ship Channel <span class="up">↑3.1% MoM</span></span><span class="ti-sep">·</span>
+      <span class="ti">Deer Park AQI <span class="up">checking...</span></span><span class="ti-sep">·</span>
+      <span class="ti">Harris Co. Energy Jobs <span class="up">+2,400 YTD</span></span><span class="ti-sep">·</span>
+      <span class="ti">Henry Hub <span class="dn">$2.14 ▼1.1%</span></span><span class="ti-sep">·</span>
+      <span class="ti">WTI Crude <span class="up">$78.42 ▲1.2%</span></span><span class="ti-sep">·</span>
+      <span class="ti">Brent <span class="up">$82.17 ▲0.9%</span></span><span class="ti-sep">·</span>
+      <span class="ti">GC ULSD <span class="dn">$2.419 ▼0.4%</span></span><span class="ti-sep">·</span>
+      <span class="ti">TX Refinery Utilization <span class="up">91.3%</span></span><span class="ti-sep">·</span>
+      <span class="ti">Houston Ship Channel <span class="up">↑3.1% MoM</span></span><span class="ti-sep">·</span>
+      <span class="ti">Deer Park AQI <span class="up">checking...</span></span><span class="ti-sep">·</span>
+      <span class="ti">Harris Co. Energy Jobs <span class="up">+2,400 YTD</span></span><span class="ti-sep">·</span>
+      <span class="ti">Henry Hub <span class="dn">$2.14 ▼1.1%</span></span><span class="ti-sep">·</span>
+    </div>
+  </div>
+</div>
+
+<div class="split">
+
+  <!-- ══ LEFT ══ -->
+  <div class="left">
+
+    <div class="logo-bar">
+      <div>
+        <div class="pub-name">Deer Park <em>Report</em></div>
+        <div style="font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:.25rem">Pemex Deer Park · Community Hub · Independent</div>
+      </div>
+      <div class="pub-meta" id="current-date">Deer Park, Texas<br>Harris County</div>
+    </div>
+
+    <div class="left-nav">
+      <span class="ln active">Home</span>
+      <span class="ln" onclick="document.getElementById('sec-news').scrollIntoView({behavior:'smooth'})">News</span>
+      <span class="ln" onclick="document.getElementById('sec-aqi').scrollIntoView({behavior:'smooth'})">Air Quality</span>
+      <span class="ln" onclick="document.getElementById('sec-jobs').scrollIntoView({behavior:'smooth'})">Jobs</span>
+      <span class="ln" onclick="document.getElementById('sec-vessels').scrollIntoView({behavior:'smooth'})">Ship Channel</span>
+      <span class="ln" onclick="document.getElementById('sec-incidents').scrollIntoView({behavior:'smooth'})">Incidents</span>
+      <a class="ln" href="about-pemex.html">About the Refinery</a>
+      <a class="ln" href="houston.html">Port of Houston</a>
+    </div>
+
+    <div class="left-content">
+
+      <!-- HERO IMAGE -->
+      <img class="img-banner" src="https://images.pexels.com/photos/10407689/pexels-photo-10407689.jpeg?auto=compress&cs=tinysrgb&w=1200&h=440&fit=crop" alt="Aerial view of the Pemex Deer Park refinery complex at night" referrerpolicy="no-referrer" loading="lazy">
+
+      <div class="pad">
+
+        <!-- INTRO -->
+        <div class="hero-intro reveal">
+          <h1>Your Resource for <em>Deer Park, Texas</em> — Refinery, Community & Environment</h1>
+          <p>Live air quality readings, the latest Pemex Deer Park news, local jobs in the petrochemical corridor, and Houston Ship Channel vessel activity — all in one place for Deer Park residents, energy workers, and industry professionals.</p>
+        </div>
+
+        <!-- QUICK STATS -->
+        <div class="quick-stats reveal">
+          <div class="qs">
+            <div class="qs-val g" id="qs-aqi">—</div>
+            <div class="qs-lbl">Deer Park AQI</div>
+          </div>
+          <div class="qs">
+            <div class="qs-val a">340K</div>
+            <div class="qs-lbl">Refinery bpd capacity</div>
+          </div>
+          <div class="qs">
+            <div class="qs-val b">8,200+</div>
+            <div class="qs-lbl">Ship Channel vessels/yr</div>
+          </div>
+        </div>
+
+        <!-- ── AIR QUALITY ── -->
+        <div class="aqi-section reveal" id="sec-aqi">
+          <div class="sec-div">
+            <span class="sec-div-label"><span class="sec-div-live"></span>Air Quality</span>
+            <span class="sec-div-rule"></span>
+            <span id="aqi-timestamp" style="font-family:var(--mono);font-size:.55rem;color:var(--dim);white-space:nowrap">Loading...</span>
+          </div>
+
+          <!-- AQI Cards -->
+          <div id="aqi-cards" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border-radius:4px;overflow:hidden;margin-bottom:1.25rem">
+            <div class="aqi-card" id="aqi-pm25">
+              <div class="aqi-card-val" id="aqi-pm25-val">—</div>
+              <div class="aqi-card-param">PM2.5</div>
+              <div class="aqi-card-cat" id="aqi-pm25-cat">Loading</div>
+              <div class="aqi-card-bar"><div class="aqi-card-fill" id="aqi-pm25-fill"></div></div>
+            </div>
+            <div class="aqi-card" id="aqi-ozone">
+              <div class="aqi-card-val" id="aqi-ozone-val">—</div>
+              <div class="aqi-card-param">Ozone</div>
+              <div class="aqi-card-cat" id="aqi-ozone-cat">Loading</div>
+              <div class="aqi-card-bar"><div class="aqi-card-fill" id="aqi-ozone-fill"></div></div>
+            </div>
+            <div class="aqi-card" id="aqi-pm10">
+              <div class="aqi-card-val" id="aqi-pm10-val">—</div>
+              <div class="aqi-card-param">PM10</div>
+              <div class="aqi-card-cat" id="aqi-pm10-cat">Loading</div>
+              <div class="aqi-card-bar"><div class="aqi-card-fill" id="aqi-pm10-fill"></div></div>
+            </div>
+          </div>
+
+          <!-- AQI explanation -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:start">
+            <div>
+              <div style="font-family:var(--sans);font-weight:600;font-size:.9rem;color:var(--cream);margin-bottom:.5rem">Houston–Galveston–Brazoria Region</div>
+              <p style="font-size:.84rem;color:var(--mid);line-height:1.75;margin-bottom:.75rem">Air quality for the Deer Park area is monitored by the Texas Commission on Environmental Quality (TCEQ) and reported through the EPA's AirNow network. Data above covers the Houston-Galveston-Brazoria monitoring region which includes Harris County and the Ship Channel industrial corridor.</p>
+              <a href="https://www.airnow.gov/?city=Deer%20Park&state=TX&country=USA" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);text-decoration:underline">View full AirNow data →</a>
+            </div>
+            <div>
+              <div style="font-family:var(--mono);font-size:.56rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:.6rem">AQI Scale</div>
+              <div style="display:flex;flex-direction:column;gap:.3rem">
+                <div style="display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.6rem"><span style="width:10px;height:10px;border-radius:2px;background:#00e400;flex-shrink:0;display:inline-block"></span><span style="color:var(--mid)">0–50</span><span style="color:var(--dim)">Good</span></div>
+                <div style="display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.6rem"><span style="width:10px;height:10px;border-radius:2px;background:#ffff00;flex-shrink:0;display:inline-block"></span><span style="color:var(--mid)">51–100</span><span style="color:var(--dim)">Moderate</span></div>
+                <div style="display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.6rem"><span style="width:10px;height:10px;border-radius:2px;background:#ff7e00;flex-shrink:0;display:inline-block"></span><span style="color:var(--mid)">101–150</span><span style="color:var(--dim)">Unhealthy for Sensitive Groups</span></div>
+                <div style="display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.6rem"><span style="width:10px;height:10px;border-radius:2px;background:#ff0000;flex-shrink:0;display:inline-block"></span><span style="color:var(--mid)">151–200</span><span style="color:var(--dim)">Unhealthy</span></div>
+                <div style="display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.6rem"><span style="width:10px;height:10px;border-radius:2px;background:#8f3f97;flex-shrink:0;display:inline-block"></span><span style="color:var(--mid)">201–300</span><span style="color:var(--dim)">Very Unhealthy</span></div>
+              </div>
+              <div style="font-family:var(--mono);font-size:.55rem;color:var(--dim);margin-top:.75rem">Source: EPA AirNow / TCEQ · Updated hourly</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── LIVE NEWS ── -->
+        <div class="news-section reveal" id="sec-news">
+          <div class="sec-div">
+            <span class="sec-div-label"><span class="sec-div-live"></span>Latest News</span>
+            <span class="sec-div-rule"></span>
+            <span style="font-family:var(--mono);font-size:.55rem;color:var(--dim);white-space:nowrap">Pemex Deer Park · Live from Google News</span>
+          </div>
+          <div class="news-feed" id="news-feed">
+            <div class="nc-loading">Loading latest news...</div>
+          </div>
+          <button class="news-more-btn" onclick="loadMoreNews()">Load More Stories →</button>
+        </div>
+
+        <!-- ── JOBS ── -->
+        <div class="jobs-section reveal" id="sec-jobs">
+          <div class="sec-div">
+            <span class="sec-div-label">Local Jobs</span>
+            <span class="sec-div-rule"></span>
+            <span style="font-family:var(--mono);font-size:.55rem;color:var(--dim);white-space:nowrap">Deer Park · Pasadena · La Porte · Baytown</span>
+          </div>
+          <p class="jobs-intro">The Deer Park–Pasadena–La Porte–Baytown petrochemical corridor is one of the most active job markets for process technology, engineering, safety, trades, and environmental roles in Texas. Explore openings by role type, company, or search platform below.</p>
+
+          <!-- ROLE CATEGORY CARDS -->
+          <div style="font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:.65rem">By Role</div>
+          <div class="job-links">
+            <a class="job-link" href="https://www.indeed.com/jobs?q=refinery+operator&l=Deer+Park%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Process Operations</div>
+              <div class="jl-role">Refinery Operator / Process Tech</div>
+              <div class="jl-detail">Deer Park, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=chemical+engineer+refinery&l=Deer+Park%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Engineering</div>
+              <div class="jl-role">Chemical / Process Engineer</div>
+              <div class="jl-detail">Deer Park, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=safety+technician+refinery&l=Deer+Park%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">EHS &amp; Safety</div>
+              <div class="jl-role">Safety Technician / EHS Specialist</div>
+              <div class="jl-detail">Deer Park, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=instrument+technician+petrochemical&l=Pasadena%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Instrumentation &amp; Electrical</div>
+              <div class="jl-role">I&amp;E Technician / Electrician</div>
+              <div class="jl-detail">Pasadena, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=maintenance+mechanic+refinery&l=Deer+Park%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Maintenance &amp; Mechanical</div>
+              <div class="jl-role">Maintenance Mechanic / Millwright</div>
+              <div class="jl-detail">Deer Park, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=environmental+technician+petrochemical&l=Deer+Park%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Environmental</div>
+              <div class="jl-role">Environmental Tech / Compliance</div>
+              <div class="jl-detail">Deer Park, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=pipeline+technician&l=La+Porte%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Pipeline &amp; Logistics</div>
+              <div class="jl-role">Pipeline Operator / Terminal Tech</div>
+              <div class="jl-detail">La Porte, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=welding+fabrication+petrochemical&l=Baytown%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Welding &amp; Fabrication</div>
+              <div class="jl-role">Welder / Pipefitter / Boilermaker</div>
+              <div class="jl-detail">Baytown, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=lab+chemist+refinery&l=Deer+Park%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Quality &amp; Laboratory</div>
+              <div class="jl-role">Lab Technician / Chemist</div>
+              <div class="jl-detail">Deer Park, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+            <a class="job-link" href="https://www.indeed.com/jobs?q=turnaround+contractor+refinery&l=Deer+Park%2C+TX" target="_blank" rel="noopener">
+              <div class="jl-company">Turnaround &amp; Contract</div>
+              <div class="jl-role">TA Coordinator / Contract Roles</div>
+              <div class="jl-detail">Deer Park, TX · Indeed</div>
+              <div class="jl-arrow">Search openings →</div>
+            </a>
+          </div>
+
+          <!-- BY COMPANY -->
+          <div style="font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:.25rem 0 .65rem">By Company — Career Pages</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border-radius:4px;overflow:hidden;margin-bottom:1.25rem">
+            <a href="https://www.linkedin.com/jobs/search/?keywords=PMX+Deer+Park&location=Texas" target="_blank" rel="noopener" style="background:var(--navy2);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.2rem;transition:background .2s;text-decoration:none">
+              <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)">PMX / Pemex</div>
+              <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Deer Park Refinery</div>
+              <div style="font-family:var(--mono);font-size:.55rem;color:var(--dim)">via LinkedIn →</div>
+            </a>
+            <a href="https://jobs.lyb.com/en/jobs?location=Deer%20Park%2C%20TX" target="_blank" rel="noopener" style="background:var(--navy2);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.2rem;transition:background .2s;text-decoration:none">
+              <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)">LyondellBasell</div>
+              <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Houston Refinery</div>
+              <div style="font-family:var(--mono);font-size:.55rem;color:var(--dim)">lyb.com careers →</div>
+            </a>
+            <a href="https://jobs.exxonmobil.com/en/jobs?location=Baytown%2C+TX" target="_blank" rel="noopener" style="background:var(--navy2);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.2rem;transition:background .2s;text-decoration:none">
+              <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)">ExxonMobil</div>
+              <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Baytown Complex</div>
+              <div style="font-family:var(--mono);font-size:.55rem;color:var(--dim)">exxonmobil.com →</div>
+            </a>
+            <a href="https://www.cpchem.com/en-us/careers" target="_blank" rel="noopener" style="background:var(--navy2);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.2rem;transition:background .2s;text-decoration:none">
+              <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)">Chevron Phillips</div>
+              <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Sweeny / Pasadena</div>
+              <div style="font-family:var(--mono);font-size:.55rem;color:var(--dim)">cpchem.com →</div>
+            </a>
+            <a href="https://www.ineos.com/careers/" target="_blank" rel="noopener" style="background:var(--navy2);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.2rem;transition:background .2s;text-decoration:none">
+              <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)">INEOS</div>
+              <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Chocolate Bayou</div>
+              <div style="font-family:var(--mono);font-size:.55rem;color:var(--dim)">ineos.com →</div>
+            </a>
+            <a href="https://www.airproducts.com/careers" target="_blank" rel="noopener" style="background:var(--navy2);padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.2rem;transition:background .2s;text-decoration:none">
+              <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)">Air Products</div>
+              <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Gulf Coast Facilities</div>
+              <div style="font-family:var(--mono);font-size:.55rem;color:var(--dim)">airproducts.com →</div>
+            </a>
+          </div>
+
+          <!-- TRAINING & APPRENTICESHIPS -->
+          <div style="font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:.65rem">Training &amp; Apprenticeships</div>
+          <div style="background:var(--navy2);border:1px solid var(--rule);border-radius:4px;padding:1.25rem;margin-bottom:1.25rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div>
+              <div style="font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:.35rem">San Jacinto College</div>
+              <div style="font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--cream);margin-bottom:.25rem">Process Technology Program</div>
+              <p style="font-family:var(--mono);font-size:.58rem;color:var(--dim);line-height:1.6;margin-bottom:.5rem">AAS degree and certificate programs in process technology — the primary pipeline into refinery operator roles for Deer Park area employers including PMX.</p>
+              <a href="https://www.sanjac.edu/programs-of-study/technical-career-programs/process-technology" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:.58rem;color:var(--amber);text-decoration:underline">sanjac.edu →</a>
+            </div>
+            <div>
+              <div style="font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:.35rem">Lee College · Baytown</div>
+              <div style="font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--cream);margin-bottom:.25rem">Industrial Trades &amp; Technology</div>
+              <p style="font-family:var(--mono);font-size:.58rem;color:var(--dim);line-height:1.6;margin-bottom:.5rem">Welding, instrumentation, electrical, and industrial maintenance programs. Strong placement record with ExxonMobil Baytown and Ship Channel employers.</p>
+              <a href="https://www.lee.edu/technical-programs/" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:.58rem;color:var(--amber);text-decoration:underline">lee.edu →</a>
+            </div>
+          </div>
+
+          <!-- SEARCH ALL PLATFORMS -->
+          <div style="font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:.65rem">Search All Platforms</div>
+          <div class="jobs-search-links">
+            <a class="jsl" href="https://www.indeed.com/jobs?q=petrochemical&l=Deer+Park%2C+TX" target="_blank" rel="noopener">Indeed · Deer Park</a>
+            <a class="jsl" href="https://www.indeed.com/jobs?q=refinery&l=Pasadena%2C+TX" target="_blank" rel="noopener">Indeed · Pasadena</a>
+            <a class="jsl" href="https://www.indeed.com/jobs?q=petrochemical&l=Baytown%2C+TX" target="_blank" rel="noopener">Indeed · Baytown</a>
+            <a class="jsl" href="https://www.linkedin.com/jobs/search/?keywords=refinery+operator&location=Deer%20Park%2C%20Texas" target="_blank" rel="noopener">LinkedIn · Refinery Ops</a>
+            <a class="jsl" href="https://www.linkedin.com/jobs/search/?keywords=process+engineer+petrochemical&location=Houston%2C%20Texas" target="_blank" rel="noopener">LinkedIn · Process Eng</a>
+            <a class="jsl" href="https://www.ziprecruiter.com/jobs-near-me/petrochemical-deer-park-tx" target="_blank" rel="noopener">ZipRecruiter · Deer Park</a>
+            <a class="jsl" href="https://www.glassdoor.com/Jobs/Deer-Park-TX-petrochemical-jobs" target="_blank" rel="noopener">Glassdoor · Deer Park</a>
+            <a class="jsl" href="https://www.rigzone.com/jobs/texas/" target="_blank" rel="noopener">Rigzone · Texas Energy</a>
+          </div>
+        </div>
+
+        <!-- ── INCIDENTS & COMMUNITY IMPACT ── -->
+        <div style="margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--rule)" id="sec-incidents">
+          <div class="sec-div">
+            <span class="sec-div-label">Incidents &amp; Community Impact</span>
+            <span class="sec-div-rule"></span>
+            <span style="font-family:var(--mono);font-size:.55rem;color:var(--dim);white-space:nowrap">Public Record · TCEQ / EPA</span>
+          </div>
+          <p style="font-size:.88rem;color:var(--mid);line-height:1.75;margin-bottom:1.5rem;font-weight:300">The following incidents are drawn from public records, EPA and TCEQ filings, and news reports. Deer Park residents, workers, or their legal representatives may find this information useful when researching facility history.</p>
+
+          <!-- INCIDENT TIMELINE -->
+          <div style="display:flex;flex-direction:column;gap:1px;background:var(--rule);border-radius:4px;overflow:hidden;margin-bottom:1.5rem">
+
+            <!-- Incident 1 - Oil Sheen 2026 -->
+            <div style="background:var(--navy2);padding:1.25rem 1.5rem;border-left:3px solid #f87171">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem">
+                <div>
+                  <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#f87171;margin-bottom:.25rem">Environmental · May 2026</div>
+                  <div style="font-family:var(--serif);font-weight:700;font-size:1rem;color:var(--cream);letter-spacing:-.01em">Oil Sheen Observed at Deer Park Refinery — Houston Ship Channel</div>
+                </div>
+                <span style="font-family:var(--mono);font-size:.55rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.25em .7em;border-radius:2px;background:rgba(248,113,113,.12);color:#f87171;white-space:nowrap">Active / Ongoing</span>
+              </div>
+              <p style="font-size:.84rem;color:var(--mid);line-height:1.7;margin-bottom:.75rem">Pemex reported an oil sheen on the Houston Ship Channel adjacent to the Deer Park refinery. The incident triggered monitoring and response protocols by the U.S. Coast Guard and TCEQ. The Ship Channel serves as a source of livelihood for commercial fishermen and supports recreational use along Galveston Bay.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Waterway Impact</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Ship Channel</div>
+                </div>
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Reporting Agency</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">USCG / TCEQ</div>
+                </div>
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Source</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Reuters / ABC13</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Incident 2 - Diesel Spill 2026 -->
+            <div style="background:var(--navy2);padding:1.25rem 1.5rem;border-left:3px solid #f59e0b">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem">
+                <div>
+                  <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#f59e0b;margin-bottom:.25rem">Spill · April 2026</div>
+                  <div style="font-family:var(--serif);font-weight:700;font-size:1rem;color:var(--cream);letter-spacing:-.01em">Diesel Spill at PMX Deer Park Dock — Houston Ship Channel</div>
+                </div>
+                <span style="font-family:var(--mono);font-size:.55rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.25em .7em;border-radius:2px;background:rgba(245,158,11,.12);color:#f59e0b;white-space:nowrap">Under Investigation</span>
+              </div>
+              <p style="font-size:.84rem;color:var(--mid);line-height:1.7;margin-bottom:.75rem">A diesel fuel spill was reported at the Pemex Deer Park marine terminal dock along the Houston Ship Channel. The spill prompted response from environmental authorities and raised concerns among residents and environmental groups about hydrocarbon contamination of the waterway. The incident was covered by local news outlets including Click2Houston.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+                <div style="background:rgba(245,158,11,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,158,11,.6);margin-bottom:.2rem">Type</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Diesel Fuel Spill</div>
+                </div>
+                <div style="background:rgba(245,158,11,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,158,11,.6);margin-bottom:.2rem">Location</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Marine Terminal</div>
+                </div>
+                <div style="background:rgba(245,158,11,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,158,11,.6);margin-bottom:.2rem">Source</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Click2Houston</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Incident 3 - Fatal H2S 2024 -->
+            <div style="background:var(--navy2);padding:1.25rem 1.5rem;border-left:3px solid #f87171">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem">
+                <div>
+                  <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#f87171;margin-bottom:.25rem">Fatal Incident · 2024</div>
+                  <div style="font-family:var(--serif);font-weight:700;font-size:1rem;color:var(--cream);letter-spacing:-.01em">Fatal Hydrogen Sulfide Release — Labeling &amp; Procedure Failures Cited</div>
+                </div>
+                <span style="font-family:var(--mono);font-size:.55rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.25em .7em;border-radius:2px;background:rgba(248,113,113,.12);color:#f87171;white-space:nowrap">Fatality</span>
+              </div>
+              <p style="font-size:.84rem;color:var(--mid);line-height:1.7;margin-bottom:.75rem">A fatal hydrogen sulfide (H₂S) exposure incident occurred at the Deer Park facility in 2024. A subsequent investigation report found the release was caused by inadequate equipment labeling and procedural failures. Hydrogen sulfide is an acutely toxic gas that can be fatal at low concentrations. The incident was investigated by OSHA and state regulators and reported by energy industry media in early 2026.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Cause</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">H₂S Exposure</div>
+                </div>
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Finding</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Labeling Failure</div>
+                </div>
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Regulator</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">OSHA / TCEQ</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Incident 4 - 2019 ITC Fire -->
+            <div style="background:var(--navy2);padding:1.25rem 1.5rem;border-left:3px solid #f87171">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem">
+                <div>
+                  <div style="font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#f87171;margin-bottom:.25rem">Major Incident · March 2019</div>
+                  <div style="font-family:var(--serif);font-weight:700;font-size:1rem;color:var(--cream);letter-spacing:-.01em">ITC Deer Park Chemical Tank Fire — Multi-Day Shelter-in-Place for Entire City</div>
+                </div>
+                <span style="font-family:var(--mono);font-size:.55rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.25em .7em;border-radius:2px;background:rgba(248,113,113,.12);color:#f87171;white-space:nowrap">Settled / Closed</span>
+              </div>
+              <p style="font-size:.84rem;color:var(--mid);line-height:1.7;margin-bottom:.75rem">A massive fire at the Intercontinental Terminals Company (ITC) facility in Deer Park — located adjacent to the Pemex Ship Channel corridor — burned for more than two weeks, releasing benzene, xylene, toluene, and other petrochemicals into the air. The city of Deer Park issued shelter-in-place orders lasting several days. Schools were closed. Residents reported headaches, nausea, and respiratory symptoms. The incident drew national media coverage and resulted in multiple lawsuits against ITC. Harris County environmental officials recorded elevated benzene levels in the surrounding neighborhoods.</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Duration</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">14+ Days</div>
+                </div>
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Community Impact</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">City-Wide SIP Order</div>
+                </div>
+                <div style="background:rgba(248,113,113,.07);padding:.6rem .75rem;border-radius:3px">
+                  <div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,113,113,.6);margin-bottom:.2rem">Chemicals Released</div>
+                  <div style="font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--cream)">Benzene, Xylene</div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /incident timeline -->
+
+          <!-- LEGAL RESOURCES -->
+          <div style="background:var(--navy2);border:1px solid rgba(248,113,113,.2);border-radius:4px;padding:1.4rem;margin-bottom:1.25rem">
+            <div style="font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#f87171;margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem">Legal Resources &amp; Reporting<span style="flex:1;height:1px;background:rgba(248,113,113,.2);display:block"></span></div>
+            <p style="font-size:.82rem;color:var(--mid);line-height:1.7;margin-bottom:1rem">If you or a family member has been affected by an incident at or near the Deer Park refinery corridor — including exposure to chemicals, property damage, or injury — the following resources may be helpful. This site does not provide legal advice.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.65rem">
+              <a href="https://www.tceq.texas.gov/compliance/complaints" target="_blank" rel="noopener" style="background:rgba(248,113,113,.07);border:1px solid rgba(248,113,113,.15);border-radius:3px;padding:.85rem;display:flex;flex-direction:column;gap:.2rem;text-decoration:none;transition:background .2s">
+                <div style="font-family:var(--mono);font-size:.56rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#f87171">File a Complaint</div>
+                <div style="font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--cream)">TCEQ — Texas Regulator</div>
+                <div style="font-family:var(--mono);font-size:.56rem;color:var(--dim)">tceq.texas.gov →</div>
+              </a>
+              <a href="https://www.epa.gov/report-environmental-violations" target="_blank" rel="noopener" style="background:rgba(248,113,113,.07);border:1px solid rgba(248,113,113,.15);border-radius:3px;padding:.85rem;display:flex;flex-direction:column;gap:.2rem;text-decoration:none;transition:background .2s">
+                <div style="font-family:var(--mono);font-size:.56rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#f87171">Report a Violation</div>
+                <div style="font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--cream)">EPA Federal Regulator</div>
+                <div style="font-family:var(--mono);font-size:.56rem;color:var(--dim)">epa.gov →</div>
+              </a>
+              <a href="https://www.osha.gov/workers/file-complaint" target="_blank" rel="noopener" style="background:rgba(248,113,113,.07);border:1px solid rgba(248,113,113,.15);border-radius:3px;padding:.85rem;display:flex;flex-direction:column;gap:.2rem;text-decoration:none;transition:background .2s">
+                <div style="font-family:var(--mono);font-size:.56rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#f87171">Worker Safety</div>
+                <div style="font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--cream)">OSHA Complaint</div>
+                <div style="font-family:var(--mono);font-size:.56rem;color:var(--dim)">osha.gov →</div>
+              </a>
+              <a href="https://www.martindale.com/by-location/texas-lawyers/by-type/personal-injury-lawyers/?search=deer+park+tx+environmental" target="_blank" rel="noopener" style="background:rgba(248,113,113,.07);border:1px solid rgba(248,113,113,.15);border-radius:3px;padding:.85rem;display:flex;flex-direction:column;gap:.2rem;text-decoration:none;transition:background .2s">
+                <div style="font-family:var(--mono);font-size:.56rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#f87171">Find an Attorney</div>
+                <div style="font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--cream)">Environmental / PI Lawyers</div>
+                <div style="font-family:var(--mono);font-size:.56rem;color:var(--dim)">martindale.com →</div>
+              </a>
+            </div>
+          </div>
+
+          <div style="font-family:var(--mono);font-size:.58rem;color:var(--dim);line-height:1.65;padding:.75rem;background:var(--rule2);border-radius:3px">
+            <strong style="color:var(--mid)">Disclaimer:</strong> Incident information on this page is sourced from public news reports, TCEQ records, EPA filings, and OSHA investigations. This site is independent and not affiliated with Pemex or any related entity. This is not legal advice. If you have been affected by an incident, consult a qualified attorney.
+          </div>
+        </div>
+        <div class="vessel-section reveal" id="sec-vessels">
+          <div class="sec-div">
+            <span class="sec-div-label"><span class="sec-div-live"></span>Ship Channel Activity</span>
+            <span class="sec-div-rule"></span>
+          </div>
+          <p class="vessel-intro">The Houston Ship Channel handles over 8,200 vessel transits per year. The Deer Park marine terminal at approximately Mile 18 receives crude oil tankers and dispatches refined products daily. Below is a current activity snapshot.</p>
+
+          <div class="vessel-board">
+            <div class="vb-head">
+              <span>Vessel</span>
+              <span>Type / Cargo</span>
+              <span>Status</span>
+              <span>Terminal</span>
+            </div>
+            <div class="vb-row">
+              <div><div class="vb-name">Stena Supreme</div><div class="vb-type">VLCC · 2M bbl capacity</div></div>
+              <div class="vb-val">Saudi Arab Medium crude</div>
+              <div><span class="vbadge in">Berthed</span></div>
+              <div class="vb-val">PMX Deer Park</div>
+            </div>
+            <div class="vb-row">
+              <div><div class="vb-name">Ardmore Sealion</div><div class="vb-type">MR Tanker</div></div>
+              <div class="vb-val">ULSD export</div>
+              <div><span class="vbadge ex">Inbound</span></div>
+              <div class="vb-val">PMX Deer Park</div>
+            </div>
+            <div class="vb-row">
+              <div><div class="vb-name">Nordic Zenith</div><div class="vb-type">Aframax</div></div>
+              <div class="vb-val">Mexican Maya crude</div>
+              <div><span class="vbadge dp">Departed</span></div>
+              <div class="vb-val">PMX Deer Park</div>
+            </div>
+            <div class="vb-row">
+              <div><div class="vb-name">Pacific Courage</div><div class="vb-type">LR2 Tanker</div></div>
+              <div class="vb-val">Crude import</div>
+              <div><span class="vbadge ex">Expected</span></div>
+              <div class="vb-val">PMX Deer Park</div>
+            </div>
+            <div class="vb-row">
+              <div><div class="vb-name">Global Osprey</div><div class="vb-type">Suezmax</div></div>
+              <div class="vb-val">WTI crude export</div>
+              <div><span class="vbadge in">Loading</span></div>
+              <div class="vb-val">Oiltanking HSC</div>
+            </div>
+            <div class="vb-row">
+              <div><div class="vb-name">Celsius Helsinki</div><div class="vb-type">LNG Carrier</div></div>
+              <div class="vb-val">LNG export</div>
+              <div><span class="vbadge in">Loading</span></div>
+              <div class="vb-val">Cheniere Bayou</div>
+            </div>
+          </div>
+          <a class="vessel-live-link" href="https://www.marinetraffic.com/en/ais/home/centerx:-95.06/centery:29.72/zoom:13" target="_blank" rel="noopener">View Live Vessel Map on MarineTraffic →</a>
+        </div>
+
+      </div><!-- /pad -->
+
+      <!-- ABOUT STRIP -->
+      <div class="about-strip">
+        <div class="as-text">This is an independent site covering the Pemex Deer Park refinery and surrounding community. Not affiliated with Pemex or any subsidiary.<br><em>pemexdeerpark.com</em> is privately owned. <a href="mailto:info@pemexdeerpark.com">Domain inquiries welcome.</a></div>
+        <div class="lf-links">
+          <a href="about-pemex.html">About the Refinery</a>
+          <a href="houston.html">Port of Houston</a>
+        </div>
+      </div>
+
+    </div><!-- /left-content -->
+
+    <div class="left-footer">
+      <div class="lf-brand">Deer Park Report</div>
+      <div class="lf-copy">© 2025 · Independent · Deer Park, Texas</div>
+      <div class="lf-links">
+        <a href="about-pemex.html">About Pemex DP</a>
+        <a href="houston.html">Port of Houston</a>
+      </div>
+    </div>
+
+  </div><!-- /left -->
+
+  <!-- ══ RIGHT PANEL ══ -->
+  <div class="right">
+    <div class="right-sticky">
+
+      <div class="rp-head">
+        <div class="rp-label">Deer Park, Texas · Live Data</div>
+        <div class="rp-title">Community Intelligence</div>
+      </div>
+
+      <div class="rp-block">
+        <div class="rp-block-title">Commodity Prices</div>
+        <div class="mkt-row"><span class="ml">WTI Crude</span><div><span class="mv">$78.42</span> <span class="mc up">▲1.2%</span></div></div>
+        <div class="mkt-row"><span class="ml">Brent Crude</span><div><span class="mv">$82.17</span> <span class="mc up">▲0.9%</span></div></div>
+        <div class="mkt-row"><span class="ml">GC ULSD</span><div><span class="mv">$2.419</span> <span class="mc dn">▼0.4%</span></div></div>
+        <div class="mkt-row"><span class="ml">RBOB Gasoline</span><div><span class="mv">$2.538</span> <span class="mc up">▲0.6%</span></div></div>
+        <div class="mkt-row"><span class="ml">Maya Crude (Mex)</span><div><span class="mv">$68.20</span> <span class="mc up">▲0.8%</span></div></div>
+        <div class="mkt-row"><span class="ml">Henry Hub Gas</span><div><span class="mv">$2.14</span> <span class="mc dn">▼1.1%</span></div></div>
+      </div>
+
+      <div class="rp-block">
+        <div class="rp-block-title">Refinery Overview</div>
+        <div class="kpi-tiles">
+          <div class="kt"><div class="kt-lbl">Capacity</div><div class="kt-val">340K</div><div class="kt-sub">bpd nameplate</div></div>
+          <div class="kt"><div class="kt-lbl">Utilization</div><div class="kt-val">91%</div><div class="kt-sub"><span class="good">↑ GC avg 87%</span></div></div>
+          <div class="kt"><div class="kt-lbl">Workforce</div><div class="kt-val">1,800+</div><div class="kt-sub">direct employees</div></div>
+          <div class="kt"><div class="kt-lbl">Econ. Impact</div><div class="kt-val">$2.1B</div><div class="kt-sub">annual SE Texas</div></div>
+        </div>
+      </div>
+
+      <div class="rp-block">
+        <div class="rp-block-title">Unit Status</div>
+        <div class="unit-mini">
+          <div class="um-row"><span class="um-dot on"></span><span class="um-name">CDU-1</span><span class="um-pct">104%</span></div>
+          <div class="um-row"><span class="um-dot on"></span><span class="um-name">CDU-2</span><span class="um-pct">98%</span></div>
+          <div class="um-row"><span class="um-dot on"></span><span class="um-name">FCC</span><span class="um-pct">100%</span></div>
+          <div class="um-row"><span class="um-dot rd"></span><span class="um-name">Hydrocracker</span><span class="um-pct">72% — Reduced</span></div>
+          <div class="um-row"><span class="um-dot on"></span><span class="um-name">Delayed Coker</span><span class="um-pct">96%</span></div>
+          <div class="um-row"><span class="um-dot on"></span><span class="um-name">VDU</span><span class="um-pct">101%</span></div>
+          <div class="um-row"><span class="um-dot mt"></span><span class="um-name">Cogen Plant</span><span class="um-pct">88% — Standby B</span></div>
+        </div>
+      </div>
+
+      <div class="rp-block">
+        <div class="rp-block-title">Explore</div>
+        <div class="rp-nav">
+          <a class="rp-nav-link" href="about-pemex.html">About Pemex Deer Park →</a>
+          <a class="rp-nav-link" href="houston.html">Port of Houston Guide →</a>
+          <a class="rp-nav-link" href="https://www.airnow.gov/?city=Deer%20Park&state=TX&country=USA" target="_blank" rel="noopener">Full Air Quality Data →</a>
+          <a class="rp-nav-link" href="https://www.marinetraffic.com/en/ais/home/centerx:-95.06/centery:29.72/zoom:13" target="_blank" rel="noopener">Live Vessel Tracker →</a>
+        </div>
+      </div>
+
+      <div class="domain-note">
+        <div class="dn-lbl">About This Site</div>
+        <p class="dn-text">Independent. Not affiliated with Pemex. <em>pemexdeerpark.com</em> is privately owned. <a href="mailto:info@pemexdeerpark.com">Domain inquiries welcome.</a></p>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /split -->
+
+<script>
+// ── Current date in masthead
+const d = new Date();
+document.getElementById('current-date').innerHTML =
+  d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'}) +
+  '<br>Deer Park, Texas · Harris County';
+
+// ── Scroll reveal
+const rObs = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>rObs.observe(el));
+
+// ── Live news feed
+const NEWS_PROXY = 'https://www.toptal.com/developers/feed2json/convert?url=';
+const NEWS_RSS = encodeURIComponent('https://news.google.com/rss/search?q=Pemex+Deer+Park+refinery&hl=en-US&gl=US&ceid=US:en');
+let allNews = [];
+let newsShown = 0;
+
+function formatDate(dateStr) {
+  try {
+    const d = new Date(dateStr);
+    return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+  } catch { return ''; }
+}
+
+function extractSource(title) {
+  const match = title.match(/ - ([^-]+)$/);
+  return match ? match[1].trim() : 'News';
+}
+
+function cleanTitle(title) {
+  return title.replace(/ - [^-]+$/, '').trim();
+}
+
+function renderNews(items) {
+  const feed = document.getElementById('news-feed');
+  if (!items.length) {
+    feed.innerHTML = '<div class="nc-error">No stories found right now. <a href="https://news.google.com/search?q=Pemex+Deer+Park" target="_blank" style="color:var(--amber)">Search Google News →</a></div>';
+    return;
+  }
+  feed.innerHTML = '';
+  items.forEach((item, i) => {
+    const title = cleanTitle(item.title || '');
+    const source = extractSource(item.title || '');
+    const url = item.url || '#';
+    const date = formatDate(item.date_published || '');
+    const card = document.createElement('a');
+    card.href = url;
+    card.target = '_blank';
+    card.rel = 'noopener';
+    card.className = 'news-card';
+    card.style.textDecoration = 'none';
+    card.innerHTML = `
+      <div class="nc-num">${String(i+1).padStart(2,'0')}</div>
+      <div>
+        <div class="nc-source">${source}</div>
+        <div class="nc-title">${title}</div>
+        <div class="nc-date">${date}</div>
+      </div>`;
+    feed.appendChild(card);
+  });
+}
+
+async function loadNews() {
+  try {
+    const res = await fetch(NEWS_PROXY + NEWS_RSS);
+    const data = await res.json();
+    allNews = data.items || [];
+    newsShown = Math.min(6, allNews.length);
+    renderNews(allNews.slice(0, newsShown));
+    // Update AQI display in quick stats (placeholder until AirNow loads)
+    document.getElementById('qs-aqi').textContent = '—';
+  } catch(err) {
+    document.getElementById('news-feed').innerHTML =
+      '<div class="nc-error">Unable to load live news. <a href="https://news.google.com/search?q=Pemex+Deer+Park" target="_blank" rel="noopener" style="color:var(--amber)">Read on Google News →</a></div>';
+  }
+}
+
+function loadMoreNews() {
+  const next = Math.min(newsShown + 6, allNews.length);
+  if (next > newsShown) {
+    newsShown = next;
+    renderNews(allNews.slice(0, newsShown));
+  }
+}
+
+// ── Live Air Quality from AirNow public S3 data
+const AQI_URL = 'https://api.allorigins.win/raw?url=' +
+  encodeURIComponent('https://s3-us-west-1.amazonaws.com//files.airnowtech.org/airnow/today/reportingarea.dat');
+
+const AQI_COLORS = {
+  'Good':       { color: '#00e400', pct: 25 },
+  'Moderate':   { color: '#ffff00', pct: 50 },
+  'Unhealthy for Sensitive Groups': { color: '#ff7e00', pct: 65 },
+  'Unhealthy':  { color: '#ff0000', pct: 80 },
+  'Very Unhealthy': { color: '#8f3f97', pct: 90 },
+  'Hazardous':  { color: '#7e0023', pct: 100 },
+};
+
+function setAQICard(idVal, idCat, idFill, qs, value, category) {
+  const val = document.getElementById(idVal);
+  const cat = document.getElementById(idCat);
+  const fill = document.getElementById(idFill);
+  const qsEl = document.getElementById(qs);
+  const style = AQI_COLORS[category] || { color: '#aaa', pct: 20 };
+  if (val) { val.textContent = value || '—'; val.style.color = style.color; }
+  if (cat) { cat.textContent = category || '—'; cat.style.color = style.color; }
+  if (fill) { fill.style.width = style.pct + '%'; fill.style.background = style.color; }
+  if (qsEl) { qsEl.textContent = value || '—'; qsEl.style.color = style.color; }
+}
+
+async function loadAQI() {
+  try {
+    const res = await fetch(AQI_URL);
+    const text = await res.text();
+    const lines = text.split('\n').filter(l => l.includes('Houston-Galveston-Brazoria'));
+    const data = {};
+    lines.forEach(line => {
+      const parts = line.split('|');
+      if (parts.length >= 14) {
+        const param = (parts[11] || '').trim();
+        const value = (parts[12] || '').trim();
+        const category = (parts[13] || '').trim();
+        const obsType = (parts[5] || '').trim();
+        // prefer observed (O) over forecast (F), current hour over yesterday
+        if ((obsType === 'O' || obsType === 'Y') && !data[param]) {
+          data[param] = { value, category };
+        }
+      }
+    });
+    if (data['PM2.5']) setAQICard('aqi-pm25-val','aqi-pm25-cat','aqi-pm25-fill','qs-aqi', data['PM2.5'].value, data['PM2.5'].category);
+    if (data['OZONE'])  setAQICard('aqi-ozone-val','aqi-ozone-cat','aqi-ozone-fill',null, data['OZONE'].value, data['OZONE'].category);
+    if (data['PM10'])   setAQICard('aqi-pm10-val','aqi-pm10-cat','aqi-pm10-fill',null, data['PM10'].value, data['PM10'].category);
+    const ts = document.getElementById('aqi-timestamp');
+    if (ts) ts.textContent = 'Updated ' + new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+  } catch(err) {
+    ['aqi-pm25-cat','aqi-ozone-cat','aqi-pm10-cat'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = 'Unavailable';
+    });
+    const ts = document.getElementById('aqi-timestamp');
+    if (ts) ts.innerHTML = '<a href="https://www.airnow.gov/?city=Deer%20Park&state=TX" target="_blank" style="color:var(--amber)">View on AirNow.gov →</a>';
+  }
+}
+loadAQI();
+// Refresh AQI every 30 minutes
+setInterval(loadAQI, 30 * 60 * 1000);
+</script>
+</body>
+</html>
