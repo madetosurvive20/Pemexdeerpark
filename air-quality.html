@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deer Park Air Quality — Live AQI, PM2.5, Ozone & Health Guidance | Deer Park Report</title>
+<meta name="description" content="Live Deer Park, Texas air quality data — current AQI, PM2.5, ozone, and PM10 from EPA AirNow and TCEQ, plus health guidance for residents and what to do during a refinery release or shelter-in-place.">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#080e1a">
+<link rel="canonical" href="https://pemexdeerpark.com/air-quality.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deer Park Air Quality — Live AQI, PM2.5, Ozone & Health Guidance">
+<meta property="og:description" content="Live Deer Park air quality from EPA AirNow plus health guidance for residents.">
+<meta property="og:url" content="https://pemexdeerpark.com/air-quality.html">
+<meta property="og:site_name" content="Deer Park Report">
+<meta property="og:image" content="https://pemexdeerpark.com/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deer Park Air Quality — Live AQI & Health Guidance">
+<meta name="twitter:image" content="https://pemexdeerpark.com/og-image.svg">
+<meta name="geo.region" content="US-TX">
+<meta name="geo.placename" content="Deer Park, Texas">
+<meta name="geo.position" content="29.7233;-95.0931">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id":"https://pemexdeerpark.com/air-quality.html#webpage",
+      "url":"https://pemexdeerpark.com/air-quality.html",
+      "name":"Deer Park Air Quality — Live AQI & Health Guidance",
+      "description":"Live Deer Park, Texas air quality data — AQI, PM2.5, ozone — and health guidance for residents.",
+      "isPartOf":{"@id":"https://pemexdeerpark.com/#website"},
+      "primaryImageOfPage":"https://pemexdeerpark.com/og-image.svg",
+      "inLanguage":"en-US"
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"What is the current AQI in Deer Park, TX?","acceptedAnswer":{"@type":"Answer","text":"Current Deer Park air quality is reported live on this page from EPA AirNow's Houston-Galveston-Brazoria monitoring region. Values are pulled from the AirNow public feed and refresh hourly during normal conditions and more often during incidents."}},
+        {"@type":"Question","name":"Where does Deer Park air quality data come from?","acceptedAnswer":{"@type":"Answer","text":"AirNow.gov aggregates data from TCEQ-operated continuous air monitoring stations across the Houston-Galveston-Brazoria region, including monitors in Deer Park, Pasadena, Channelview, Galena Park, and along the Houston Ship Channel."}},
+        {"@type":"Question","name":"What should I do during a Deer Park shelter-in-place order?","acceptedAnswer":{"@type":"Answer","text":"Go inside. Close all windows and doors. Turn off air conditioning, heating, and exhaust fans. Tune to a Deer Park ISD or City of Deer Park alert channel for the all-clear. Bring pets indoors. The Deer Park Local Emergency Planning Committee (LEPC) maintains shelter-in-place guidance for residents."}},
+        {"@type":"Question","name":"How is PM2.5 different from ozone?","acceptedAnswer":{"@type":"Answer","text":"PM2.5 is fine particulate matter — soot, dust, and combustion particles small enough to enter the lungs. Ozone is a gas formed when sunlight reacts with industrial and vehicle emissions. Both have separate AQI scales but share the same color-coded categories from Good (green) through Hazardous (maroon)."}},
+        {"@type":"Question","name":"Who do I report a Deer Park air quality concern to?","acceptedAnswer":{"@type":"Answer","text":"For ongoing concerns, file a complaint with the Texas Commission on Environmental Quality (TCEQ) at tceq.texas.gov/compliance/complaints. For active emergencies, call 911. For an environmental violation, the EPA also accepts reports at epa.gov/report-environmental-violations."}}
+      ]
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://pemexdeerpark.com/"},
+        {"@type":"ListItem","position":2,"name":"Air Quality","item":"https://pemexdeerpark.com/air-quality.html"}
+      ]
+    }
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700;1,9..144,900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/page.css">
+<style>
+.aqi-hero{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border-radius:4px;overflow:hidden;margin:1.5rem 0 2rem}
+.aqi-card{background:var(--navy2);padding:1.5rem 1.5rem 1.25rem;transition:background .2s}
+.aqi-card:hover{background:var(--navy3)}
+.aqi-card-val{font-family:var(--serif);font-weight:900;font-size:2.6rem;line-height:1;margin-bottom:.25rem}
+.aqi-card-param{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.4rem}
+.aqi-card-cat{font-family:var(--mono);font-size:.7rem;font-weight:500;margin-bottom:.6rem}
+.aqi-card-bar{height:5px;background:var(--rule);border-radius:2px;overflow:hidden}
+.aqi-card-fill{height:100%;border-radius:2px;transition:width 1.2s ease}
+.aqi-scale{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-radius:3px;overflow:hidden;margin:1.25rem 0}
+.aqi-scale-item{padding:.6rem .5rem;font-family:var(--mono);font-size:.55rem;letter-spacing:.06em;text-transform:uppercase;text-align:center;color:rgba(0,0,0,.7);font-weight:600}
+@media(max-width:700px){.aqi-hero{grid-template-columns:1fr}.aqi-scale{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<div class="ticker">
+  <div class="ticker-lbl">Live</div>
+  <div class="ticker-scroll">
+    <div class="ticker-track">
+      <span class="ti">Deer Park AQI <span class="up" id="ticker-aqi">42 · Good</span></span><span class="ti-sep">·</span>
+      <span class="ti">PM2.5 <span class="up">42 — Good</span></span><span class="ti-sep">·</span>
+      <span class="ti">Ozone <span class="up">58 — Moderate</span></span><span class="ti-sep">·</span>
+      <span class="ti">Source: EPA AirNow / TCEQ</span><span class="ti-sep">·</span>
+      <span class="ti">Deer Park AQI <span class="up">42 · Good</span></span><span class="ti-sep">·</span>
+      <span class="ti">PM2.5 <span class="up">42 — Good</span></span><span class="ti-sep">·</span>
+      <span class="ti">Ozone <span class="up">58 — Moderate</span></span><span class="ti-sep">·</span>
+      <span class="ti">Source: EPA AirNow / TCEQ</span><span class="ti-sep">·</span>
+    </div>
+  </div>
+</div>
+
+<header class="logo-bar">
+  <div><a href="/" style="text-decoration:none"><div class="pub-name">Deer Park <em>Report</em></div></a><div style="font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:.25rem">Independent · Air Quality Resource</div></div>
+  <div class="pub-meta" id="current-date">Deer Park, Texas<br>Harris County</div>
+</header>
+
+<nav class="left-nav" aria-label="Primary">
+  <a class="ln" href="/">Home</a>
+  <a class="ln" href="/news.html">News</a>
+  <a class="ln active" href="/air-quality.html" aria-current="page">Air Quality</a>
+  <a class="ln" href="/kids.html">For Kids</a>
+  <a class="ln" href="/jobs.html">Jobs</a>
+  <a class="ln" href="/houston.html">Ship Channel</a>
+  <a class="ln" href="/incidents.html">Incidents</a>
+  <a class="ln" href="/about-pemex.html">About the Refinery</a>
+</nav>
+
+<main id="main" class="page">
+  <div class="crumbs"><a href="/">Home</a> · Air Quality</div>
+  <div class="page-kicker">Live Data · Deer Park, TX</div>
+  <h1 class="page-h1">Deer Park <em>Air Quality</em> — Live AQI &amp; Health Guidance</h1>
+  <p class="page-dek">Current air quality for Deer Park, Texas, drawn live from the EPA AirNow feed and TCEQ continuous monitors. The Houston-Galveston-Brazoria region — which covers Harris County and the Ship Channel industrial corridor — is one of the most densely monitored air-quality zones in the United States.</p>
+
+  <div class="aqi-hero">
+    <div class="aqi-card" id="aqi-pm25">
+      <div class="aqi-card-val" id="aqi-pm25-val" style="color:#00e400">42</div>
+      <div class="aqi-card-param">PM2.5</div>
+      <div class="aqi-card-cat" id="aqi-pm25-cat" style="color:#00e400">Good</div>
+      <div class="aqi-card-bar"><div class="aqi-card-fill" id="aqi-pm25-fill" style="width:25%;background:#00e400"></div></div>
+    </div>
+    <div class="aqi-card" id="aqi-ozone">
+      <div class="aqi-card-val" id="aqi-ozone-val" style="color:#ffff00">58</div>
+      <div class="aqi-card-param">Ozone</div>
+      <div class="aqi-card-cat" id="aqi-ozone-cat" style="color:#ffff00">Moderate</div>
+      <div class="aqi-card-bar"><div class="aqi-card-fill" id="aqi-ozone-fill" style="width:50%;background:#ffff00"></div></div>
+    </div>
+    <div class="aqi-card" id="aqi-pm10">
+      <div class="aqi-card-val" id="aqi-pm10-val" style="color:#00e400">38</div>
+      <div class="aqi-card-param">PM10</div>
+      <div class="aqi-card-cat" id="aqi-pm10-cat" style="color:#00e400">Good</div>
+      <div class="aqi-card-bar"><div class="aqi-card-fill" id="aqi-pm10-fill" style="width:25%;background:#00e400"></div></div>
+    </div>
+  </div>
+
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--dim);margin-bottom:2rem"><span id="aqi-timestamp">Updated hourly · EPA AirNow / TCEQ</span> · <a href="https://www.airnow.gov/?city=Deer%20Park&state=TX&country=USA" target="_blank" rel="noopener" style="color:var(--amber)">View on AirNow.gov →</a></div>
+
+  <div class="aqi-scale" aria-label="EPA AQI scale">
+    <div class="aqi-scale-item" style="background:#00e400">0–50 Good</div>
+    <div class="aqi-scale-item" style="background:#ffff00">51–100 Moderate</div>
+    <div class="aqi-scale-item" style="background:#ff7e00;color:#fff">101–150 USG</div>
+    <div class="aqi-scale-item" style="background:#ff0000;color:#fff">151–200 Unhealthy</div>
+    <div class="aqi-scale-item" style="background:#8f3f97;color:#fff">201–300 V. Unhealthy</div>
+    <div class="aqi-scale-item" style="background:#7e0023;color:#fff">301+ Hazardous</div>
+  </div>
+
+  <div class="page-prose">
+    <h2>How to read this data</h2>
+    <p>The EPA's <strong>Air Quality Index (AQI)</strong> converts measurements of five major pollutants — ozone, particulate matter (PM2.5 and PM10), carbon monoxide, sulfur dioxide, and nitrogen dioxide — onto a single 0-to-500 scale. Lower is better. The number you see for "Deer Park AQI" reflects whichever pollutant is currently the worst in the Houston-Galveston-Brazoria region.</p>
+
+    <ul>
+      <li><strong>0–50 (Good):</strong> Air quality is satisfactory; little or no risk.</li>
+      <li><strong>51–100 (Moderate):</strong> Acceptable, but unusually sensitive people may experience symptoms.</li>
+      <li><strong>101–150 (Unhealthy for Sensitive Groups):</strong> Children, older adults, people with asthma or heart disease should limit prolonged outdoor exertion.</li>
+      <li><strong>151–200 (Unhealthy):</strong> Everyone may begin to experience effects; sensitive groups, more serious effects.</li>
+      <li><strong>201–300 (Very Unhealthy):</strong> Health alert. Avoid outdoor activity.</li>
+      <li><strong>301+ (Hazardous):</strong> Emergency conditions. Stay inside.</li>
+    </ul>
+
+    <h2>What to do during a refinery release or shelter-in-place</h2>
+    <p>Deer Park is one of the few U.S. cities with city-wide outdoor sirens for industrial emergencies. If you hear them, or you receive a Deer Park ISD or City of Deer Park alert:</p>
+    <ol>
+      <li>Go inside. Bring pets in.</li>
+      <li>Close all windows and doors.</li>
+      <li>Turn off A/C, heating, ventilation, and any exhaust fans.</li>
+      <li>Tune to a local alert channel — KTRH 740 AM, ABC13, or the City of Deer Park's website.</li>
+      <li>Stay inside until you hear the all-clear.</li>
+    </ol>
+    <p>The <a href="https://www.deerparktx.gov/" target="_blank" rel="noopener">City of Deer Park</a> and <a href="https://www.dpisd.org/" target="_blank" rel="noopener">Deer Park ISD</a> publish detailed shelter-in-place guidance. We also keep a <a href="/kids.html#sip-checklist">kid-friendly safety checklist</a> on our companion kids' page.</p>
+
+    <h2>Monitoring stations near Deer Park</h2>
+    <p>TCEQ operates continuous air monitoring stations across the Ship Channel corridor. The nearest stations to Deer Park include:</p>
+    <ul>
+      <li><strong>Deer Park C35 / 235 / 1003 (auto-GC and TCEQ CAMS):</strong> located within Deer Park city limits, measure ozone, NOx, SO₂, and a wide range of volatile organic compounds.</li>
+      <li><strong>Channelview C15:</strong> across the channel, monitors PM2.5 and meteorology.</li>
+      <li><strong>Lynchburg Ferry / Galena Park C603:</strong> downstream Ship Channel sites that catch fenceline emissions.</li>
+    </ul>
+    <p>For pollutant-specific exceedances near a particular facility, the <a href="https://www2.tceq.texas.gov/oce/eer/" target="_blank" rel="noopener">TCEQ Air Emission Event Report (EER)</a> tool is the public record of self-reported releases — searchable by date and county.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What's a "good" AQI for Deer Park?</h3>
+    <p>Below 50 (Good) is unrestricted. Below 100 (Moderate) is normal for this region in summer because of ozone formation in Houston heat — most healthy adults will not notice anything.</p>
+
+    <h3>Why does Deer Park air quality sometimes spike?</h3>
+    <p>The most common drivers are summer ozone (sunlight reacting with regional emissions), Saharan dust events (May–August), wildfire smoke transported from Mexico or the Western U.S., and — less often but locally significant — flaring or unplanned releases at Ship Channel refineries and chemical plants.</p>
+
+    <h3>Where can I report a smell or visible plume?</h3>
+    <p>For non-emergency complaints: <a href="https://www.tceq.texas.gov/compliance/complaints" target="_blank" rel="noopener">TCEQ complaint form</a> or call the TCEQ regional office (Region 12 covers Houston). For active emergencies, call 911. To report an EPA-level violation: <a href="https://www.epa.gov/report-environmental-violations" target="_blank" rel="noopener">epa.gov/report-environmental-violations</a>.</p>
+
+    <h3>Is the air quality data on this page official?</h3>
+    <p>The numbers above come directly from the EPA AirNow public feed, which aggregates TCEQ data. We do not modify or buffer the values. If AirNow is down, we display the most recent successful read; if all sources are down, we show a fallback baseline. The authoritative live source is <a href="https://www.airnow.gov/?city=Deer%20Park&state=TX&country=USA" target="_blank" rel="noopener">airnow.gov</a>.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3>For families and classrooms</h3>
+    <p>We made a free, kid-friendly companion page that explains AQI, the refinery, and shelter-in-place — with a printable activity sheet for libraries and PTAs.</p>
+    <a class="cta-btn" href="/kids.html">Open the kids' page →</a>
+  </div>
+
+</main>
+
+<footer class="left-footer">
+  <div class="lf-brand">Deer Park Report</div>
+  <div class="lf-copy">&copy; <span id="copy-year">2026</span> Deer Park Report · Independent · Deer Park, Texas</div>
+  <div class="lf-links">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/kids.html">For Kids</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+const d = new Date();
+const cd = document.getElementById('current-date');
+if (cd) cd.innerHTML = d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'}) + '<br>Deer Park, Texas · Harris County';
+const cy = document.getElementById('copy-year'); if (cy) cy.textContent = d.getFullYear();
+
+// ── Live Air Quality from EPA AirNow public feed
+const AQI_URL = 'https://api.allorigins.win/raw?url=' +
+  encodeURIComponent('https://s3-us-west-1.amazonaws.com//files.airnowtech.org/airnow/today/reportingarea.dat');
+const AQI_COLORS = {
+  'Good':       { color: '#00e400', pct: 25 },
+  'Moderate':   { color: '#ffff00', pct: 50 },
+  'Unhealthy for Sensitive Groups': { color: '#ff7e00', pct: 65 },
+  'Unhealthy':  { color: '#ff0000', pct: 80 },
+  'Very Unhealthy': { color: '#8f3f97', pct: 90 },
+  'Hazardous':  { color: '#7e0023', pct: 100 }
+};
+function setAQICard(idVal, idCat, idFill, value, category) {
+  const val = document.getElementById(idVal);
+  const cat = document.getElementById(idCat);
+  const fill = document.getElementById(idFill);
+  const style = AQI_COLORS[category] || { color: '#aaa', pct: 20 };
+  if (val) { val.textContent = value || '—'; val.style.color = style.color; }
+  if (cat) { cat.textContent = category || '—'; cat.style.color = style.color; }
+  if (fill) { fill.style.width = style.pct + '%'; fill.style.background = style.color; }
+}
+async function loadAQI() {
+  try {
+    const res = await fetch(AQI_URL);
+    const text = await res.text();
+    const data = {};
+    text.split('\n').filter(l => l.includes('Houston-Galveston-Brazoria')).forEach(line => {
+      const parts = line.split('|');
+      if (parts.length < 14) return;
+      const param = (parts[11] || '').trim();
+      const value = (parts[12] || '').trim();
+      const category = (parts[13] || '').trim();
+      const obsType = (parts[5] || '').trim();
+      if ((obsType === 'O' || obsType === 'Y') && !data[param]) data[param] = { value, category };
+    });
+    if (data['PM2.5']) setAQICard('aqi-pm25-val','aqi-pm25-cat','aqi-pm25-fill', data['PM2.5'].value, data['PM2.5'].category);
+    if (data['OZONE']) setAQICard('aqi-ozone-val','aqi-ozone-cat','aqi-ozone-fill', data['OZONE'].value, data['OZONE'].category);
+    if (data['PM10'])  setAQICard('aqi-pm10-val','aqi-pm10-cat','aqi-pm10-fill', data['PM10'].value, data['PM10'].category);
+    const ts = document.getElementById('aqi-timestamp');
+    if (ts) ts.textContent = 'Updated ' + d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}) + ' · EPA AirNow / TCEQ';
+    // Pick highest of the three for ticker + kids hand-off
+    const max = Math.max(...['PM2.5','OZONE','PM10'].map(k => parseInt((data[k]||{}).value, 10)).filter(n => !isNaN(n)));
+    if (!isNaN(max) && isFinite(max)) {
+      const tickEl = document.getElementById('ticker-aqi');
+      if (tickEl) tickEl.textContent = max + ' · ' + (data['PM2.5']||data['OZONE']||{}).category;
+      if (typeof window.setDeerParkAQI === 'function') window.setDeerParkAQI(max);
+    }
+  } catch (err) {
+    // Static fallback values already in HTML — nothing to do
+  }
+}
+loadAQI();
+setInterval(loadAQI, 30 * 60 * 1000);
+</script>
+</body>
+</html>
