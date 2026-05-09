@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.pemexdeerpark.com/sitemap.xml
+# Sitemap
+Sitemap: https://pemexdeerpark.com/sitemap.xml

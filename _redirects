@@ -1,0 +1,14 @@
+# www → apex (preserves canonical)
+https://www.pemexdeerpark.com/* https://pemexdeerpark.com/:splat 301!
+
+# Pretty URLs for the new pages
+/air-quality       /air-quality.html       200
+/jobs              /jobs.html              200
+/incidents         /incidents.html         200
+/news              /news.html              200
+/kids              /kids.html              200
+/about             /about.html             200
+/contact           /contact.html           200
+/about-pemex       /about-pemex.html       200
+/houston           /houston.html           200
+/ship-channel      /houston.html           200
